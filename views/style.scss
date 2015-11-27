@@ -1,12 +1,7 @@
-$a-road: #00af5d;
-$m-way: #004fb0;
-$info-bg: #ffffff;
+$footer-border: #e5e5e5;
+$footer-bg: #f0f0f0;
+$footer-text: #777;
 
-$footer-border: #aaa;
-$footer-bg: #ddd;
-$footer-text: #000;
-
-$a-road-text: #ffe800;
 $highlight: #ffff88;
 $date-highlight: #000080;
 
@@ -40,39 +35,6 @@ footer {
 
     small {
         font-size: 80%
-    }
-}
-
-article {       /* A road defaults */
-    border: 5px solid white;
-    border-radius: 15px;
-    margin: 5px 0;
-    padding: 5px 10px;
-    background-color: $a-road;
-    color: white;
-    line-height: 16pt;
-
-    p {
-        margin: 10px 20px;
-    }
-
-    h1 {    /* Axx road name */
-        color: $a-road-text;
-        display: block;
-        font-size: 115%;
-        font-weight: bold;
-        margin: 10px 20px 20px 10px;
-        float: left;
-    }
-
-    &.m-way {   // Motorway
-        background-color: $m-way;
-
-        h1 { color: white; }
-    }
-
-    span.date {
-        color: $highlight;
     }
 }
 

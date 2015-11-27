@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RSS <%= @title ? "- #{@title}" : "" %></title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+        </button>
+        <a href="/" class="navbar-brand">
+          <img src="RBSLogo2_small.png" alt="RBS Logo">
+        </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="http://immense-countdown.herokuapp.com">Countdown</a></li>
+          <li><a href="http://ha-roadworks.herokuapp.com">Roadworks</a></li>
+          <li><a href="https://twitter.com/ReallyBigShoeUK">Twitter</a></li>
+          <li><a href="https://github.com/JulianNicholls"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <%= yield %>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="col-sm-1">
+        <img src="RBSLogo2_small.png" alt="RBS Small Logo">
+      </div>
+      <div class="col-sm-11">
+        <nav>
+          <ul>
+            <li><a href="http://immense-countdown.herokuapp.com">Countdown</a></li>
+            <li><a href="http://ha-roadworks.herokuapp.com">Roadworks</a></li>
+            <li><a href="https://twitter.com/ReallyBigShoeUK">Twitter</a></li>
+            <li><a href="https://github.com/JulianNicholls"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <p>
+          <small>
+            Created on a Mac with
+            <a href="http://www.sublimetext.com">Sublime Text</a>,
+            <a href="https://www.ruby-lang.org">Ruby</a>, and
+            <a href="http://sinatrarb.com">Sinatra</a>
+          </small>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
