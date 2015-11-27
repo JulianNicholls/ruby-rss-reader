@@ -38,6 +38,8 @@ end
 
 info = traverse(rss, INFO_PARTS)
 
+items.each_with_object
+
 pp info
 pp items.count
 # puts
