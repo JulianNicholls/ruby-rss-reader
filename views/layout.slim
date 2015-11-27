@@ -4,7 +4,8 @@ html lang='en'
     meta charset="utf-8"
     meta http-equiv="X-UA-Compatible" content="IE=edge"
     meta name="viewport" content="width=device-width, initial-scale=1"
-    title Highway Agency Roadworks
+    title RSS - #{@title}
+
     link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
     link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"
     link href="/css/style.css" rel="stylesheet"
@@ -18,20 +19,14 @@ html lang='en'
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand href="http://reallybigshoe.co.uk/index.html"
+          a.navbar-brand href="/"
             img src="RBSLogo2_small.png" alt="RBS Logo"
 
         div#navbar.collapse.navbar-collapse
           ul.nav.navbar-nav
             li
-              a href="http://reallybigshoe.co.uk/index.html" Home
-            li
-              a href="http://reallybigshoe.co.uk/portfolio.html" Portfolio
-            li
-              a href="http://reallybigshoe.co.uk/contact.html" Contact Us
-            li
               a href="http://immense-countdown.herokuapp.com" Countdown
-            li.active
+            li
               a href="http://ha-roadworks.herokuapp.com" Roadworks
             li
               a href="https://twitter.com/ReallyBigShoeUK" target="_blank" Twitter
@@ -48,13 +43,9 @@ html lang='en'
           nav
             ul
               li
-                a href="http://reallybigshoe.co.uk/index.html" Home
-              li
-                a href="http://reallybigshoe.co.uk/portfolio.html" Portfolio
-              li
-                a href="http://reallybigshoe.co.uk/contact.html" Contact Us
-              li
                 a href="http://immense-countdown.herokuapp.com" Countdown
+              li
+                a href="http://ha-roadworks.herokuapp.com" Roadworks
               li
                 a href="https://twitter.com/ReallyBigShoeUK" target="_blank" Twitter
               li
@@ -68,17 +59,9 @@ html lang='en'
                 ' Created on a Mac with
                 a href="http://www.sublimetext.com" target="_blank" Sublime Text
                 ' ,
-                a href="http://www.postgresql.org" target="_blank" Postgres
-                ' , and
                 a href="https://www.ruby-lang.org" target="_blank" Ruby
-
-        div.row
-          div.col-sm-8.col-sm-offset-2
-            p
-              small
-                | I am not affiliated with the UK Highways Agency, Department for Transport,
-                  or any other part of the UK government.
+                ' , and
+                a href="http://sinatrarb.com" target="_blank" Sinatra
 
     script src="http://code.jquery.com/jquery.js"
-    script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
-    script src="js/roadworks.js"
+    script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"

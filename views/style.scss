@@ -20,45 +20,10 @@ nav img {
 
 .bigger {
     font-size: 1.2em;
-
-    span#data-date {
-        color: $date-highlight;
-    }
-}
-
-
-/*** Roadworks panel ***/
-
-div#roadworks-info {
-    background-color: $info-bg;
-    margin-top: 20px;
-    clear: both;
-    padding: 6px 10px;
-    color: black;
-    min-height: 200px;
-    overflow: auto;
-
-    p.summary {
-        text-align: center;
-        font-size: 120%;
-    }
-}
-
-legend {
-    font-size: 16px;
-}
-
-label {
-    float: left;
-    width: 5em;
-}
-
-select {
-    margin-bottom: 10px;
-    font-size: 16px;
 }
 
 footer {
+    margin-top: 20px;
     padding: 10px 0 0 10px;
     border-top: 1px solid $footer-border;
     background-color: $footer-bg;
@@ -113,10 +78,6 @@ article {       /* A road defaults */
 
 @media (max-width: 992px) {
     li.active {
-        display: none;
-    }
-
-    label {
         display: none;
     }
 }

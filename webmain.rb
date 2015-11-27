@@ -8,7 +8,10 @@ class RssApp < Sinatra::Application
 
   get('/css/style.css') { scss :style }
 
-  get('/')              { slim :index }
+  get('/') do
+    @title = "BBC RSS Feed"
+    slim :index
+  end
 
   get '/road/:road' do
     @road_data = road_table.order(:end_date)
