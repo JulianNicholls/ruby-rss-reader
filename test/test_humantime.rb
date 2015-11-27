@@ -10,21 +10,22 @@ describe HumanTime do
   it 'should be right for the last hour' do
     HumanTime.new('2014-01-07 13:59', now).to_s.must_equal 'Just now'
 
-    HumanTime.new('2014-01-07 13:58', now).to_s.must_equal 'A couple of minutes ago'
+    HumanTime.new('2014-01-07 13:58', now)
+      .to_s.must_equal 'A couple of minutes ago'
 
-    HumanTime.new('2014-01-07 13:30', now).to_s.must_equal 'half an hour ago'
+    HumanTime.new('2014-01-07 13:30', now).to_s.must_equal 'Half an hour ago'
 
     HumanTime.new('2014-01-07 13:00', now).to_s.must_equal 'An hour ago'
     HumanTime.new('2014-01-07 12:56', now).to_s.must_equal 'An hour ago'
   end
 
   it 'should be right for the last couple of hours' do
-    HumanTime.new('2014-01-07 12:55', now).to_s.must_equal '65 Minutes ago'
-    HumanTime.new('2014-01-07 12:54', now).to_s.must_equal '66 Minutes ago'
+    HumanTime.new('2014-01-07 12:55', now).to_s.must_equal '65 minutes ago'
+    HumanTime.new('2014-01-07 12:54', now).to_s.must_equal '66 minutes ago'
 
-    HumanTime.new('2014-01-07 12:40', now).to_s.must_equal '2 Hours ago'
-    HumanTime.new('2014-01-07 12:01', now).to_s.must_equal '2 Hours ago'
-    HumanTime.new('2014-01-07 12:00', now).to_s.must_equal '2 Hours ago'
+    HumanTime.new('2014-01-07 12:40', now).to_s.must_equal '2 hours ago'
+    HumanTime.new('2014-01-07 12:01', now).to_s.must_equal '2 hours ago'
+    HumanTime.new('2014-01-07 12:00', now).to_s.must_equal '2 hours ago'
   end
 
   it 'should be right earlier in the day' do
@@ -43,39 +44,39 @@ describe HumanTime do
   end
 
   it 'should be right for the previous two days' do
-    HumanTime.new('2014-01-06 00:00', now).to_s.must_equal '2 Days ago'
-    HumanTime.new('2014-01-05 23:59', now).to_s.must_equal '2 Days ago'
-    HumanTime.new('2014-01-05 15:00', now).to_s.must_equal '2 Days ago'
-    HumanTime.new('2014-01-05 14:00', now).to_s.must_equal '2 Days ago'
-    HumanTime.new('2014-01-05 12:00', now).to_s.must_equal '2 Days ago'
-    HumanTime.new('2014-01-05 06:00', now).to_s.must_equal '2 Days ago'
+    HumanTime.new('2014-01-06 00:00', now).to_s.must_equal '2 days ago'
+    HumanTime.new('2014-01-05 23:59', now).to_s.must_equal '2 days ago'
+    HumanTime.new('2014-01-05 15:00', now).to_s.must_equal '2 days ago'
+    HumanTime.new('2014-01-05 14:00', now).to_s.must_equal '2 days ago'
+    HumanTime.new('2014-01-05 12:00', now).to_s.must_equal '2 days ago'
+    HumanTime.new('2014-01-05 06:00', now).to_s.must_equal '2 days ago'
   end
 
   it 'should be right for the previous week' do
-    HumanTime.new('2014-01-04 06:00', now).to_s.must_equal '3 Days ago'
-    HumanTime.new('2014-01-03 06:00', now).to_s.must_equal '4 Days ago'
-    HumanTime.new('2014-01-02 06:00', now).to_s.must_equal '5 Days ago'
-    HumanTime.new('2014-01-01 06:00', now).to_s.must_equal 'A week ago'
+    HumanTime.new('2014-01-04 06:00', now).to_s.must_equal '3 days ago'
+    HumanTime.new('2014-01-03 06:00', now).to_s.must_equal '4 days ago'
+    HumanTime.new('2014-01-02 06:00', now).to_s.must_equal '5 days ago'
+    HumanTime.new('2013-12-31 14:30', now).to_s.must_equal 'A week ago'
     HumanTime.new('2013-12-31 06:00', now).to_s.must_equal 'A week ago'
+    HumanTime.new('2013-12-30 06:00', now).to_s.must_equal 'A week ago'
   end
 
   it 'should be right for the previous month' do
-    HumanTime.new('2013-12-30 06:00', now).to_s.must_equal 'A week ago'
     HumanTime.new('2013-12-23 06:00', now).to_s.must_equal 'A fortnight ago'
-    HumanTime.new('2013-12-16 06:00', now).to_s.must_equal '3 weeks ago'
-    HumanTime.new('2013-12-09 06:00', now).to_s.must_equal '5 Weeks ago'
+    HumanTime.new('2013-12-16 06:00', now).to_s.must_equal '22 days ago'
+    HumanTime.new('2013-12-09 06:00', now).to_s.must_equal '5 weeks ago'
   end
 
   it 'should be right for months before' do
-    HumanTime.new('2013-11-01 06:00', now).to_s.must_equal '2 Months ago'
-    HumanTime.new('2013-07-01 06:00', now).to_s.must_equal '6 Months ago'
-    HumanTime.new('2013-01-01 06:00', now).to_s.must_equal '12 Months ago'
-    HumanTime.new('2012-07-01 06:00', now).to_s.must_equal '18 Months ago'
-    HumanTime.new('2012-06-01 06:00', now).to_s.must_equal '19 Months ago'
+    HumanTime.new('2013-11-01 06:00', now).to_s.must_equal '2 months ago'
+    HumanTime.new('2013-07-01 06:00', now).to_s.must_equal '6 months ago'
+    HumanTime.new('2013-01-01 06:00', now).to_s.must_equal '12 months ago'
+    HumanTime.new('2012-07-01 06:00', now).to_s.must_equal '18 months ago'
+    HumanTime.new('2012-06-01 06:00', now).to_s.must_equal '19 months ago'
   end
 
   it 'should be right for years before' do
-    HumanTime.new('2012-05-01 06:00', now).to_s.must_equal '2 Years ago'
-    HumanTime.new('2011-05-01 06:00', now).to_s.must_equal '3 Years ago'
+    HumanTime.new('2012-05-01 06:00', now).to_s.must_equal '2 years ago'
+    HumanTime.new('2011-05-01 06:00', now).to_s.must_equal '3 years ago'
   end
 end

@@ -26,7 +26,6 @@ ITEM_PARTS = {
 }
 
 rss     = Nokogiri::XML(open 'bbc_rss_feed.xml')
-channel = rss.xpath(TOP_LEVEL)
 items   = rss.xpath(ITEMS)
 
 def traverse(feed, parts, base = TOP_LEVEL)

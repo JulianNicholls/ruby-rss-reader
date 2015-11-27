@@ -7,8 +7,7 @@ class RssApp < Sinatra::Application
   get('/css/style.css') { scss :style }
 
   get('/') do
-    @title = "BBC RSS Feed"
+    @title = 'BBC RSS Feed'
     erb :index
   end
-
 end
