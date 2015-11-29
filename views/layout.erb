@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RSS <%= @title ? "- #{@title}" : "" %></title>
+  <title>ARSS2 Aggregator <%= @title ? "- #{@title}" : "" %></title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -23,7 +23,7 @@
            <span class="icon-bar"></span>
         </button>
         <a href="/" class="navbar-brand">
-          <img src="RBSLogo2_small.png" alt="RBS Logo">
+          <img src="/RBSLogo2_small.png" alt="RBS Logo">
         </a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
@@ -37,14 +37,12 @@
     </div>
   </nav>
 
-  <div class="container">
-    <%= yield %>
-  </div>
+  <%= yield %>
 
   <footer>
     <div class="row">
       <div class="col-sm-1">
-        <img src="RBSLogo2_small.png" alt="RBS Small Logo">
+        <img src="/RBSLogo2_small.png" alt="RBS Small Logo">
       </div>
       <div class="col-sm-11">
         <nav>
@@ -57,16 +55,18 @@
         </nav>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-6 col-sm-offset-3">
-        <p>
-          <small>
-            Created on a Mac with
-            <a href="http://www.sublimetext.com">Sublime Text</a>,
-            <a href="https://www.ruby-lang.org">Ruby</a>, and
-            <a href="http://sinatrarb.com">Sinatra</a>
-          </small>
-        </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+          <p>
+            <small>
+              Created on a Mac with
+              <a href="http://www.sublimetext.com">Sublime Text</a>,
+              <a href="https://www.ruby-lang.org">Ruby</a>, and
+              <a href="http://sinatrarb.com">Sinatra</a>
+            </small>
+          </p>
+        </div>
       </div>
     </div>
   </footer>

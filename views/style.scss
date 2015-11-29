@@ -1,9 +1,15 @@
+$base-color: #008830;
+
 $footer-border: #e5e5e5;
 $footer-bg: #f0f0f0;
 $footer-text: #777;
 
 $highlight: #ffff88;
 $date-highlight: #000080;
+
+body {
+    background: lighten($base-color, 70);
+}
 
 h1 {
     text-align: center;
@@ -15,6 +21,21 @@ nav img {
 
 .bigger {
     font-size: 1.2em;
+}
+
+header {
+    background: $base-color;
+    color: #fff;
+    margin-top: -10px;
+    margin-bottom: 20px;
+
+    h5 {
+        text-align: center;
+    }
+
+    img {
+        margin-top: 10px;
+    }
 }
 
 footer {

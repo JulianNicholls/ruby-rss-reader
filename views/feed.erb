@@ -1,0 +1,28 @@
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <% if @info[:image_url] %>
+          <img src="<%= @info[:image_url] %>" alt="" />
+        <% end %>
+      </div>
+      <div class="col-sm-8">
+        <h1><%= @title %></h1>
+        <h5><%= @info[:description] %></h5>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-1">
+      Picture goes here
+    </div>
+    <div class="col-sm-9">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus laboriosam omnis deleniti rem a modi culpa doloribus expedita sit, iure esse nihil debitis officia, voluptate voluptatum quidem totam hic quas!
+    </div>
+    <div class="col-sm-2">A few seconds ago</div>
+  </div>
+</div>
+
