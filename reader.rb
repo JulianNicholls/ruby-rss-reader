@@ -2,6 +2,7 @@
 
 require 'open-uri'
 require 'nokogiri'
+require './humantime'
 
 class Feed
   TOP_LEVEL = '//channel'
@@ -15,14 +16,16 @@ class Feed
     image_url:     'image/url',
     image_caption: 'image/title',
     image_width:   'image/width',
-    image_height:  'image/height'
+    image_height:  'image/height',
+    timestamp:     'lastBuildDate'
   }
 
   ITEM_PARTS = {
     title:       'title',
     description: 'description',
     link:        'link',
-    timestamp:   'pubDate'
+    timestamp:   'pubDate',
+    image_url:   'media:thumbnail'
   }
 
   def initialize(feed_path)
@@ -43,7 +46,7 @@ class Feed
   end
 
   def get_items
-    items   = @rss.xpath(ITEMS)
+    items = @rss.xpath(ITEMS)
     feed_items = items.each_with_object([]) do |item, array|
       array << traverse(item, ITEM_PARTS)
     end
@@ -52,10 +55,15 @@ class Feed
   private
 
   def traverse(base, parts)
-    parts.each_with_object({}) do |(key, path), object|
+    item = parts.each_with_object({}) do |(key, path), object|
       item        = base.xpath(path)
       object[key] = item.children.to_s unless item.empty?
     end
+
+    stamp = item[:timestamp]
+    item[:time_ago] = HumanTime.new(stamp) if stamp
+
+    item
   end
 end
 
