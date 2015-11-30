@@ -15,14 +15,24 @@
 </header>
 
 <div class="container">
-  <div class="row">
-    <div class="col-sm-1">
-      Picture goes here
-    </div>
-    <div class="col-sm-9">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus laboriosam omnis deleniti rem a modi culpa doloribus expedita sit, iure esse nihil debitis officia, voluptate voluptatum quidem totam hic quas!
-    </div>
-    <div class="col-sm-2">A few seconds ago</div>
-  </div>
+  <% if @items.any? %>
+    <% @items.each do |item| %>
+      <article>
+        <div class="row">
+          <div class="col-sm-1">
+            <% if item.key? :image_url %>
+              <img src="<%= item[:image_url] %>" alt="">
+            <% end %>
+          </div>
+          <div class="col-sm-9">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus laboriosam omnis deleniti rem a modi culpa doloribus expedita sit, iure esse nihil debitis officia, voluptate voluptatum quidem totam hic quas!
+          </div>
+          <div class="col-sm-2"><%= item[:time_ago] %></div>
+        </div>
+      </article>
+    <% end %>
+  <% else %>
+    <h2 class="text-center">No feed items to display</h2>
+  <% end %>
 </div>
 
