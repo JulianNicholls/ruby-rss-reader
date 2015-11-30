@@ -9,23 +9,23 @@ class Feed
   ITEMS     = '//item'
 
   INFO_PARTS = {
-    title:         'title',
-    link:          'link',
-    description:   'description',
-    copyright:     'copyright',
-    image_url:     'image/url',
-    image_caption: 'image/title',
-    image_width:   'image/width',
-    image_height:  'image/height',
-    timestamp:     'lastBuildDate'
+    title:         ['title'],
+    link:          ['link'],
+    description:   ['description'],
+    copyright:     ['copyright'],
+    image_url:     ['image/url'],
+    image_caption: ['image/title'],
+    image_width:   ['image/width'],
+    image_height:  ['image/height'],
+    timestamp:     ['lastBuildDate']
   }
 
   ITEM_PARTS = {
-    title:       'title',
-    description: 'description',
-    link:        'link',
-    timestamp:   'pubDate',
-    image_url:   'media:thumbnail'
+    title:       ['title'],
+    description: ['description'],
+    link:        ['link'],
+    timestamp:   ['pubDate'],
+    image:       ['media:thumbnail', ['url']]
   }
 
   def initialize(feed_path)
@@ -56,8 +56,19 @@ class Feed
 
   def traverse(base, parts)
     item = parts.each_with_object({}) do |(key, path), object|
-      item        = base.xpath(path)
-      object[key] = item.children.to_s unless item.empty?
+      item        = base.xpath(path[0])
+
+      if path.count > 1
+        base_name = key.to_s
+        item.each do |cur|
+          path[1].each do |element|
+            key_name = "#{base_name}_#{element}".to_sym
+            object[key_name] = cur[element]
+          end
+        end
+      else
+        object[key] = item.children.to_s unless item.empty?
+      end
     end
 
     stamp = item[:timestamp]
@@ -76,7 +87,7 @@ if $PROGRAM_NAME == __FILE__
 
     pp feed.info
     pp feed.items.count
-    pp feed.items[0]
+    pp feed.items.take(5)
   rescue StandardError => e
     warn "Cannot open #{addr}: #{e}"
   end

@@ -3,10 +3,14 @@ require 'sinatra/reloader' if development?
 require 'sass'
 require 'tilt/erb'
 require 'tilt/sass'
+
 require './reader'
+require './helpers'
 
 # RSS display application
 class RssApp < Sinatra::Application
+  include RssAppHelpers
+
   get('/css/style.css') { scss :style }
 
   get('/') do
@@ -16,7 +20,7 @@ class RssApp < Sinatra::Application
 
   get('/feed/*') do
     @title = 'Feed'
-    addr = params[:splat][0].sub 'http:/', 'http://'
+    addr = params[:splat][0].sub /(https?):\//, '\1://'
 
     begin
       puts "Addr: #{addr}"
@@ -35,10 +39,10 @@ class RssApp < Sinatra::Application
       warn e
     end
 
-    puts "Loading..."
-    p @info
-    p @items[0]
-    p @items[1]
+    # puts "Loading..."
+    # p @info
+    # p @items[0]
+    # p @items[1]
     erb :feed
   end
 end
