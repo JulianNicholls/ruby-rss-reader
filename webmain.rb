@@ -20,23 +20,25 @@ class RssApp < Sinatra::Application
 
   get('/feed/*') do
     @title = 'Feed'
-    addr = params[:splat][0].sub /(https?):\//, '\1://'
+    addr = params[:splat][0].sub(%r{(https?):/}, '\1://')
 
     begin
-      puts "Addr: #{addr}"
+      # puts "Addr: #{addr}"
       feed = Feed.new addr || 'bbc_rss_feed.xml'
       @title = feed.info[:title]
       @info  = feed.info
-      @items = feed.items.sort_by { |item| Time.parse(item[:timestamp]) }.reverse
-    rescue StandardError => e
+      @items = feed.items.sort_by do |item|
+        Time.parse(item[:timestamp])
+      end.reverse
+    rescue StandardError => err
       @title = "Cannot load feed at #{params[:addr]}"
       @info = {
-        description:  e
+        description:  err
       }
 
       @items = []
       warn @title
-      warn e
+      warn err
     end
 
     # puts "Loading..."
