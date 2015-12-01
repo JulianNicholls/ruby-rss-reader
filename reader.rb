@@ -4,6 +4,42 @@ require 'open-uri'
 require 'nokogiri'
 require './humantime'
 
+# Take a section of an XML file and traverse it in search of key, value pairs
+class ItemTraverser
+  def initialize(base, parts)
+    @base = base
+    @parts_list = parts
+  end
+
+  def collect
+    item = @parts_list.each_with_object({}) do |(key, path), object|
+      @section = @base.xpath(path.first)
+
+      next if @section.empty?
+      next object[key] = @section.children.to_s if path.size == 1
+
+      @section.each do |cur|
+        path[1].each do |element|
+          key_name = "#{key}_#{element}".to_sym
+          object[key_name] = cur[element]
+        end
+      end
+    end
+
+    add_human_time(item)
+  end
+
+  private
+
+  def add_human_time(item)
+    stamp = item[:timestamp]
+    item[:time_ago] = HumanTime.new(stamp) if stamp
+
+    item
+  end
+end
+
+# Load and store a RSS / Atom feed.
 class Feed
   TOP_LEVEL = '//channel'
   ITEMS     = '//item'
@@ -29,52 +65,27 @@ class Feed
   }
 
   def initialize(feed_path)
-    @rss = Nokogiri::XML(open feed_path)  # File or URL, could raise
+    # This could be a file or web address. It could raise an exception.
+    @rss = Nokogiri::XML(open feed_path)
   end
 
   def info
-    @info ||= get_info
+    @info ||= load_info
   end
 
-  def get_info
+  def load_info
     info = @rss.xpath(TOP_LEVEL)
-    traverse(info, INFO_PARTS)
+    ItemTraverser.new(info, INFO_PARTS).collect
   end
 
   def items
-    @items ||= get_items
+    @items ||= load_items
   end
 
-  def get_items
-    items = @rss.xpath(ITEMS)
-    feed_items = items.each_with_object([]) do |item, array|
-      array << traverse(item, ITEM_PARTS)
+  def load_items
+    @rss.xpath(ITEMS).each_with_object([]) do |item, array|
+      array << ItemTraverser.new(item, ITEM_PARTS).collect
     end
-  end
-
-  private
-
-  def traverse(base, parts)
-    item = parts.each_with_object({}) do |(key, path), object|
-      item        = base.xpath(path[0])
-
-      if path.count > 1
-        base_name = key.to_s
-        item.each do |cur|
-          path[1].each do |element|
-            key_name = "#{base_name}_#{element}".to_sym
-            object[key_name] = cur[element]
-          end
-        end
-      else
-        object[key] = item.children.to_s unless item.empty?
-      end
-    end
-
-    stamp = item[:timestamp]
-    item[:time_ago] = HumanTime.new(stamp) if stamp
-
-    item
   end
 end
 
@@ -86,7 +97,7 @@ if $PROGRAM_NAME == __FILE__
     feed = Feed.new(addr)
 
     pp feed.info
-    pp feed.items.count
+    pp feed.items.size
     pp feed.items.take(5)
   rescue StandardError => e
     warn "Cannot open #{addr}: #{e}"
