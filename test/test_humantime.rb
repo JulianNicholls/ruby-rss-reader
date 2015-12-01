@@ -5,8 +5,18 @@ require_relative '../humantime.rb'
 # test HumanTime class
 
 describe HumanTime do
-  let(:now) { Time.new(2014, 1, 7, 14, 0) }
+  let(:now) { Time.new(2014, 1, 7, 14, 0) } # 2pm on 7 Jan 2014
 
+  it 'should work with the default current time' do
+    this_time = Time.now
+    just_now = this_time - 5
+    shortly_ago = this_time - 125
+    HumanTime.new(just_now).to_s.must_equal 'Just now'
+    HumanTime.new(shortly_ago).to_s.must_equal 'A couple of minutes ago'
+  end
+
+  # From here on, it works with an injected 'now' to make elapsed time
+  # much easier to set.
   it 'should be right for the last hour' do
     HumanTime.new('2014-01-07 13:59', now).to_s.must_equal 'Just now'
 
