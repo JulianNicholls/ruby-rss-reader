@@ -1,17 +1,17 @@
-$base-color: #008830;
+$base-color:     #008830;
 
-$footer-border: #e5e5e5;
-$footer-bg: #f0f0f0;
-$footer-text: #777;
+$footer-border:  #e5e5e5;
+$footer-bg:      #f0f0f0;
+$footer-text:    #777;
 
-$highlight: #ffff88;
+$highlight:      #ffff88;
 $date-highlight: #000080;
 
-$header-link: lighten(adjust-color($base-color, $red: 120), 20);
-$article-link: lighten(adjust-color($base-color, $blue: 120), 10);
+$header-link:    lighten(adjust-color($base-color, $red:  120), 30);
+$article-link:   lighten(adjust-color($base-color, $blue: 120), 10);
 
 body {
-    background: lighten($base-color, 70);
+    background: lighten($base-color, 60);
 }
 
 h1 {
@@ -75,9 +75,10 @@ article {
 
     h4 {
         margin-top: 0;
-        margin-left: 2em;
+        margin-left: 1em;
     }
-    a {
+
+    a, a:visited {
         color: $article-link;
 
         &:hover {
