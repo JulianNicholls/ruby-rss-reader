@@ -1,2 +1,3 @@
 require './webmain'
+
 run RssApp

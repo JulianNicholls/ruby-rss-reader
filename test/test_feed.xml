@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>BBC News - Home</title>
+    <link>http://www.bbc.co.uk/news/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+    <description>The latest stories from the Home section of the BBC News web site.</description>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 26 Nov 2015 18:44:21 GMT</lastBuildDate>
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>
+    <image>
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>
+      <title>BBC News - Home</title>
+      <link>http://www.bbc.co.uk/news/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <width>120</width>
+      <height>60</height>
+    </image>
+    <ttl>15</ttl>
+    <atom:link href="http://feeds.bbci.co.uk/news/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Corbyn 'cannot support air strikes'</title>
+      <description>Labour leader Jeremy Corbyn writes to his MPs saying he cannot back UK air strikes in Syria - prompting a warning of shadow cabinet resignations.</description>
+      <link>http://www.bbc.co.uk/news/uk-politics-34939109#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-34939109</guid>
+      <pubDate>Thu, 26 Nov 2015 18:41:16 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/57BB/production/_86895422_breaking_image_large-3.png"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/BA53/production/_86899674_breaking_image_large-3.png"/>
+    </item>
+    <item>
+      <title>Syria air strikes 'will make us safer'</title>
+      <description>David Cameron puts the case for air strikes against IS in Syria - with Jeremy Corbyn at odds with half his shadow cabinet on the issue.</description>
+      <link>http://www.bbc.co.uk/news/uk-politics-34927939#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-34927939</guid>
+      <pubDate>Thu, 26 Nov 2015 17:51:05 GMT</pubDate>
+    </item>
+    <item>
+      <title>Russia plans sanctions against Turkey</title>
+      <description>Russia is preparing wide-ranging economic sanctions against Turkey after the downing of one of its jets, Prime Minister Dmitry Medvedev says.</description>
+      <link>http://www.bbc.co.uk/news/world-europe-34933608#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-34933608</guid>
+      <pubDate>Thu, 26 Nov 2015 17:48:02 GMT</pubDate>
+    </item>
+    <item>
+      <title>Lord Coe ends association with Nike</title>
+      <description>IAAF president Lord Coe ends his 38-year ambassadorial role with American sportswear giant Nike.</description>
+      <link>http://www.bbc.co.uk/sport/0/athletics/34938953</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/athletics/34938953</guid>
+      <pubDate>Thu, 26 Nov 2015 18:49:45 GMT</pubDate>
+      <media:thumbnail width="66" height="37" url="http://c.files.bbci.co.uk/14186/production/_86901328_lord_coe_getty.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/16896/production/_86901329_lord_coe_getty.jpg"/>
+    </item>
+    <item>
+      <title>Number of untaxed UK vehicles doubles</title>
+      <description>The number of vehicles without road tax - Vehicle Excise Duty (VED) - doubled to 560,000 after the paper tax disc was abolished in October 2014.</description>
+      <link>http://www.bbc.co.uk/news/business-34933962#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-34933962</guid>
+      <pubDate>Thu, 26 Nov 2015 17:25:59 GMT</pubDate>
+    </item>
+    <item>
+      <title>BBC Three to move online from February</title>
+      <description>The BBC Trust formally approves proposals to move BBC Three online only from February, on the condition that programmes will be shown on BBC One and Two.</description>
+      <link>http://www.bbc.co.uk/news/entertainment-arts-34932688#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-34932688</guid>
+      <pubDate>Thu, 26 Nov 2015 16:15:15 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/1094F/production/_86891976_0uwjinwy.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/1305F/production/_86891977_0uwjinwy.jpg"/>
+    </item>
+    <item>
+      <title>'Very significant' cuts still to come</title>
+      <description>"Very significant" government spending cuts will be imposed before the next general election, the Institute for Fiscal Studies think tank warns.</description>
+      <link>http://www.bbc.co.uk/news/business-34930317#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-34930317</guid>
+      <pubDate>Thu, 26 Nov 2015 16:26:16 GMT</pubDate>
+    </item>
+    <item>
+      <title>Net migration to UK hits record 336,000</title>
+      <description>Annual net migration to the UK reaches a record 336,000, with 294,000 people arriving in the UK for work, figures show.</description>
+      <link>http://www.bbc.co.uk/news/uk-34931725#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-34931725</guid>
+      <pubDate>Thu, 26 Nov 2015 17:14:01 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/16B28/production/_86886929_migrationfigure.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/0F80/production/_86886930_migrationfigure.jpg"/>
+    </item>
+    <item>
+      <title>Families win carers' benefit cap case</title>
+      <description>The government discriminated against disabled people by failing to exempt some unpaid carers from the cap on benefits, the High Court rules.</description>
+      <link>http://www.bbc.co.uk/news/uk-34933769#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-34933769</guid>
+      <pubDate>Thu, 26 Nov 2015 14:39:12 GMT</pubDate>
+    </item>
+    <item>
+      <title>Trump mocks disabled reporter</title>
+      <description>Republican presidential contender Donald Trump is criticised for mocking a disabled New York Times reporter.</description>
+      <link>http://www.bbc.co.uk/news/world-us-canada-34930042#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-34930042</guid>
+      <pubDate>Thu, 26 Nov 2015 09:05:51 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
+
