@@ -3,7 +3,7 @@ require 'minitest/pride'
 require_relative '../reader.rb'
 
 describe Feed do
-  let(:feed) { Feed.new('bbc_rss_feed.xml') }
+  let(:feed) { Feed.new('test/test_feed.xml') }
 
   it 'should load all info sections' do
     feed.info.keys.count.must_equal(10) # All INFO_PARTS + time_ago
@@ -30,8 +30,8 @@ describe Feed do
     feed.info[:image_height].must_equal '60'
   end
 
-  it 'should load 56 items' do
-    feed.items.size.must_equal 56
+  it 'should load all 10 items' do
+    feed.items.size.must_equal 10
   end
 
   it 'should load a full set of parts from a comnplete item' do
