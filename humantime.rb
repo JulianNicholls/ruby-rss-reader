@@ -1,15 +1,19 @@
 require 'time'
 
-# Monkey patch Float to have a between? analog.
-class Float
-  def in?(low, high)
-    self > low && self < high
+# Refine Float to have a between? analog.
+module FloatPatch
+  refine Float
+    def in?(low, high)
+      self >= low && self <= high
+    end
   end
 end
 
 # Class that returns a Human representation of the time elapsed since
 # a passed time, or between two times.
 class HumanTime
+  using FloatPatch
+
   HOUR_SECS = 3600
   DAY_SECS  = 24 * HOUR_SECS
 
