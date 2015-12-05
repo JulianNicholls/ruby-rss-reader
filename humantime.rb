@@ -20,32 +20,37 @@ class HumanTime
   end
 
   def to_s
-    text = longer + ' ago'
+    return today if days < 0
+    return 'Yesterday' if days < 1
 
-    text = 'Yesterday' if days < 1
-    text = today       if days < 0
-
-    text = 'An hour ago' if elapsed.between?(58 * 60 + 30, 65 * 60 - 15)
-
-    text = 'A couple of minutes ago' if elapsed < 170
-
-    text = 'Just now' if elapsed < 90
-
-    text
+    longer + ' ago'
   end
 
   def today
-    return 'Half an hour ago' if elapsed.between?(28.5 * 60, 31.5 * 60)
-    return format('%.0f minutes ago', (elapsed / 60.0)) if elapsed < (71 * 60)
+    return last_hour if elapsed < (71 * 60)
 
     return 'This morning' if @stamp < midday && @now > midday
 
     format '%.0f hours ago', hours
   end
 
+  def last_hour
+    return 'Just now' if elapsed < 90
+    return 'A couple of minutes ago' if elapsed < 170
+    return 'An hour ago' if elapsed.between?(58 * 60 + 30, 65 * 60 - 15)
+    return 'Half an hour ago' if elapsed.between?(28.5 * 60, 31.5 * 60)
+
+    format('%.0f minutes ago', (elapsed / 60.0) + 0.45) if elapsed < (71 * 60)
+  end
+
   def longer
     return 'A week' if days.in?(6, 8)
     return 'A fortnight' if days.in?(13, 15)
+
+    days_weeks_months
+  end
+
+  def days_weeks_months
     return format('%.0f days', [days, 2].max) if days <= 28
     return format('%.0f weeks', ((days + 3) / 7)) if days <= 49
     return format('%.0f months', (days / 30.0)) if days < (20 * 30)
