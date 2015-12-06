@@ -1,4 +1,14 @@
-$base-color:     #008830;
+$base-colour:    #135715;
+$base-first:     #13a318;
+$base-third:     #52a355;
+$base-fourth:    #a34770;
+$base-fifth:     #57102f;
+
+// $base-colour:    #39632b;
+// $base-first:     #72b05e;
+// $base-third:     #2c2cbd;
+// $base-fourth:    #7d523c;
+// $base-fifth:     #fca77b;
 
 $footer-border:  #e5e5e5;
 $footer-bg:      #f0f0f0;
@@ -7,11 +17,11 @@ $footer-text:    #777;
 $highlight:      #ffff88;
 $date-highlight: #000080;
 
-$header-link:    lighten(adjust-color($base-color, $red:  120), 30);
-$article-link:   lighten(adjust-color($base-color, $blue: 120), 10);
+$header-link:    $base-third;
+$article-link:   $base-first;
 
 body {
-    background: lighten($base-color, 60);
+    background: $base-third;
 }
 
 h1 {
@@ -27,8 +37,8 @@ nav img {
 }
 
 header {
-    background: $base-color;
-    color: #fff;
+    background: $base-fifth;
+    color: white;
     margin-top: -15px;
     margin-bottom: 20px;
     padding: 10px;
@@ -70,12 +80,12 @@ footer {
 article {
     padding: 10px;
     margin-bottom: 3px;
-    background: darken($base-color, 10);
-    color: lighten($base-color, 60);
+    background: $base-colour;
+    color: white;
 
     h4 {
         margin-top: 0;
-        margin-left: 1em;
+        margin-left: 0.5em;
     }
 
     a, a:visited {
@@ -88,6 +98,7 @@ article {
 
     .humantime {
         text-align: right;
+        font-size: 80%;
     }
 }
 
