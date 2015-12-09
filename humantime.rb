@@ -2,7 +2,7 @@ require 'time'
 
 # Refine Float to have a between? analog.
 module FloatPatch
-  refine Float
+  refine Float do
     def in?(low, high)
       self >= low && self <= high
     end

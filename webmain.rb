@@ -6,6 +6,7 @@ require 'tilt/sass'
 
 require './reader'
 require './helpers'
+require './humantime'
 
 # RSS display application
 class RssApp < Sinatra::Application
@@ -46,5 +47,9 @@ class RssApp < Sinatra::Application
     # p @items[0]
     # p @items[1]
     erb :feed
+  end
+
+  get('/humantime') do
+    HumanTime.new(params[:stamp]).to_s
   end
 end
