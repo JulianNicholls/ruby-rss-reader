@@ -1,14 +1,8 @@
-$base-colour:    #135715;
-$base-first:     #13a318;
-$base-third:     #52a355;
-$base-fourth:    #a34770;
-$base-fifth:     #57102f;
-
-// $base-colour:    #39632b;
-// $base-first:     #72b05e;
-// $base-third:     #2c2cbd;
-// $base-fourth:    #7d523c;
-// $base-fifth:     #fca77b;
+$base-colour: #6c6a5a;
+$base-one:    #e55041;
+$base-two:    #6ea1ff;
+$base-three:  #ddd9d0;
+$base-four:   #831d16;
 
 $footer-border:  #e5e5e5;
 $footer-bg:      #f0f0f0;
@@ -17,11 +11,14 @@ $footer-text:    #777;
 $highlight:      #ffff88;
 $date-highlight: #000080;
 
-$header-link:    $base-third;
-$article-link:   $base-first;
+$header-bg:      $base-three;
+$header-link:    $base-one;
+
+$article-bg:     $base-colour;
+$article-link:   $base-two;
 
 body {
-    background: $base-third;
+    background: linear-gradient($base-four, black);
 }
 
 h1 {
@@ -37,8 +34,8 @@ nav img {
 }
 
 header {
-    background: $base-fifth;
-    color: white;
+    background: $header-bg;
+    color: black;
     margin-top: -15px;
     margin-bottom: 20px;
     padding: 10px;
@@ -53,6 +50,31 @@ header {
         &:hover {
             color: lighten($header-link, 20);
         }
+    }
+}
+
+article {
+    padding: 10px;
+    margin-bottom: 3px;
+    background: $article-bg;
+    color: white;
+
+    h4 {
+        margin-top: 0;
+        margin-left: 0.5em;
+    }
+
+    a, a:visited {
+        color: $article-link;
+
+        &:hover {
+            color: lighten($article-link, 20);
+        }
+    }
+
+    .humantime {
+        text-align: right;
+        font-size: 80%;
     }
 }
 
@@ -77,30 +99,6 @@ footer {
     }
 }
 
-article {
-    padding: 10px;
-    margin-bottom: 3px;
-    background: $base-colour;
-    color: white;
-
-    h4 {
-        margin-top: 0;
-        margin-left: 0.5em;
-    }
-
-    a, a:visited {
-        color: $article-link;
-
-        &:hover {
-            color: lighten($article-link, 20);
-        }
-    }
-
-    .humantime {
-        text-align: right;
-        font-size: 80%;
-    }
-}
 
 @media (max-width: 992px) {
     li.active {

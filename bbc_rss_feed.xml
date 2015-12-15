@@ -1,460 +1,461 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
 
-<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
-  <channel> 
-    <title>BBC News - Home</title>  
-    <link>http://www.bbc.co.uk/news/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-    <description>The latest stories from the Home section of the BBC News web site.</description>  
-    <language>en-gb</language>  
-    <lastBuildDate>Thu, 26 Nov 2015 18:44:21 GMT</lastBuildDate>  
-    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
-    <image> 
-      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
-      <title>BBC News - Home</title>  
-      <link>http://www.bbc.co.uk/news/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <width>120</width>  
-      <height>60</height> 
-    </image>  
-    <ttl>15</ttl>  
-    <atom:link href="http://feeds.bbci.co.uk/news/rss.xml" rel="self" type="application/rss+xml"/>  
-    <item> 
-      <title>Corbyn 'cannot support air strikes'</title>  
-      <description>Labour leader Jeremy Corbyn writes to his MPs saying he cannot back UK air strikes in Syria - prompting a warning of shadow cabinet resignations.</description>  
-      <link>http://www.bbc.co.uk/news/uk-politics-34939109#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-34939109</guid>  
-      <pubDate>Thu, 26 Nov 2015 18:41:16 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/57BB/production/_86895422_breaking_image_large-3.png"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/BA53/production/_86899674_breaking_image_large-3.png"/> 
-    </item>  
-    <item> 
-      <title>Syria air strikes 'will make us safer'</title>  
-      <description>David Cameron puts the case for air strikes against IS in Syria - with Jeremy Corbyn at odds with half his shadow cabinet on the issue.</description>  
-      <link>http://www.bbc.co.uk/news/uk-politics-34927939#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-34927939</guid>  
-      <pubDate>Thu, 26 Nov 2015 17:51:05 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Russia plans sanctions against Turkey</title>  
-      <description>Russia is preparing wide-ranging economic sanctions against Turkey after the downing of one of its jets, Prime Minister Dmitry Medvedev says.</description>  
-      <link>http://www.bbc.co.uk/news/world-europe-34933608#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-34933608</guid>  
-      <pubDate>Thu, 26 Nov 2015 17:48:02 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Lord Coe ends association with Nike</title>  
-      <description>IAAF president Lord Coe ends his 38-year ambassadorial role with American sportswear giant Nike.</description>  
-      <link>http://www.bbc.co.uk/sport/0/athletics/34938953</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/athletics/34938953</guid>  
-      <pubDate>Thu, 26 Nov 2015 18:49:45 GMT</pubDate>  
-      <media:thumbnail width="66" height="37" url="http://c.files.bbci.co.uk/14186/production/_86901328_lord_coe_getty.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/16896/production/_86901329_lord_coe_getty.jpg"/> 
-    </item>  
-    <item> 
-      <title>Number of untaxed UK vehicles doubles</title>  
-      <description>The number of vehicles without road tax - Vehicle Excise Duty (VED) - doubled to 560,000 after the paper tax disc was abolished in October 2014.</description>  
-      <link>http://www.bbc.co.uk/news/business-34933962#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-34933962</guid>  
-      <pubDate>Thu, 26 Nov 2015 17:25:59 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>BBC Three to move online from February</title>  
-      <description>The BBC Trust formally approves proposals to move BBC Three online only from February, on the condition that programmes will be shown on BBC One and Two.</description>  
-      <link>http://www.bbc.co.uk/news/entertainment-arts-34932688#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-34932688</guid>  
-      <pubDate>Thu, 26 Nov 2015 16:15:15 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/1094F/production/_86891976_0uwjinwy.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/1305F/production/_86891977_0uwjinwy.jpg"/> 
-    </item>  
-    <item> 
-      <title>'Very significant' cuts still to come</title>  
-      <description>"Very significant" government spending cuts will be imposed before the next general election, the Institute for Fiscal Studies think tank warns.</description>  
-      <link>http://www.bbc.co.uk/news/business-34930317#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-34930317</guid>  
-      <pubDate>Thu, 26 Nov 2015 16:26:16 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Net migration to UK hits record 336,000</title>  
-      <description>Annual net migration to the UK reaches a record 336,000, with 294,000 people arriving in the UK for work, figures show.</description>  
-      <link>http://www.bbc.co.uk/news/uk-34931725#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-34931725</guid>  
-      <pubDate>Thu, 26 Nov 2015 17:14:01 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/16B28/production/_86886929_migrationfigure.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/0F80/production/_86886930_migrationfigure.jpg"/> 
-    </item>  
-    <item> 
-      <title>Families win carers' benefit cap case</title>  
-      <description>The government discriminated against disabled people by failing to exempt some unpaid carers from the cap on benefits, the High Court rules.</description>  
-      <link>http://www.bbc.co.uk/news/uk-34933769#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-34933769</guid>  
-      <pubDate>Thu, 26 Nov 2015 14:39:12 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Trump mocks disabled reporter</title>  
-      <description>Republican presidential contender Donald Trump is criticised for mocking a disabled New York Times reporter.</description>  
-      <link>http://www.bbc.co.uk/news/world-us-canada-34930042#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-34930042</guid>  
-      <pubDate>Thu, 26 Nov 2015 09:05:51 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Cult leader tells of 'satellite warfare machine'</title>  
-      <description>A communist accused of presiding over a cult in London tells a court he can 'initiate' an "electronic satellite warfare machine" called Jackie.</description>  
-      <link>http://www.bbc.co.uk/news/uk-england-london-34930772#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-london-34930772</guid>  
-      <pubDate>Thu, 26 Nov 2015 16:45:45 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Grandson killer jailed for drowning</title>  
-      <description>A man who drowned his nine-year-old grandson in the bath is jailed for life for the boy's murder.</description>  
-      <link>http://www.bbc.co.uk/news/uk-england-lincolnshire-34933991#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-lincolnshire-34933991</guid>  
-      <pubDate>Thu, 26 Nov 2015 18:22:45 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>VIDEO: Citizen journalists capture life in Raqqa under Islamic State</title>  
-      <description>Citizen journalists are the main - and often only - source of information about life in a city controlled by the so-called Islamic State.</description>  
-      <link>http://www.bbc.co.uk/news/magazine-34928547#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-34928547</guid>  
-      <pubDate>Thu, 26 Nov 2015 10:24:02 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/146DE/production/_86887638__73250751_020647244-1.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/16DEE/production/_86887639__73250751_020647244-1.jpg"/> 
-    </item>  
-    <item> 
-      <title>VIDEO: Afghan rapper escaped child marriage</title>  
-      <description>The BBC speaks to Sonita Alizadeh, who started rapping after she was nearly sold as a bride by her family.</description>  
-      <link>http://www.bbc.co.uk/news/world-34923016#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-34923016</guid>  
-      <pubDate>Thu, 26 Nov 2015 01:01:26 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/108E9/production/_86871876_rapper.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/12FF9/production/_86871877_rapper.jpg"/> 
-    </item>  
-    <item> 
-      <title>VIDEO: Baby found in NY church nativity manger</title>  
-      <description>A newborn baby has been called ''a miracle child'' after being found in the nativity manger of the Holy Child Jesus Church in Queens, New York.</description>  
-      <link>http://www.bbc.co.uk/news/world-us-canada-34926008#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-34926008</guid>  
-      <pubDate>Thu, 26 Nov 2015 16:13:44 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>VIDEO: Australian man drives into bushfire</title>  
-      <description>A man who was filming on his phone while driving past a bushfire says he is lucky to be alive, after the flames engulfed his car.</description>  
-      <link>http://www.bbc.co.uk/news/world-australia-34918310#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-australia-34918310</guid>  
-      <pubDate>Thu, 26 Nov 2015 11:31:49 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/FC92/production/_86885646_cf036fcd-66aa-403a-bc0d-a337ebc56ba7.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/123A2/production/_86885647_cf036fcd-66aa-403a-bc0d-a337ebc56ba7.jpg"/> 
-    </item>  
-    <item> 
-      <title>VIDEO: Man lives after demolition goes wrong</title>  
-      <description>A demolition worker has survived after a 113-year-old smokestack fell on him in Alabama, US.</description>  
-      <link>http://www.bbc.co.uk/news/world-us-canada-34929970#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-34929970</guid>  
-      <pubDate>Thu, 26 Nov 2015 10:53:21 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/7704/production/_86886403_86886395.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/9E14/production/_86886404_86886395.jpg"/> 
-    </item>  
-    <item> 
-      <title>VIDEO: Switzerland’s vanishing natural wonder</title>  
-      <description>Striking drone footage shows the extent of the retreat of Switzerland's Rhone Glacier, as scientists warn such magisterial ice-masses will have almost vanished by the end of the century.</description>  
-      <link>http://www.bbc.co.uk/news/science-environment-34908482#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/science-environment-34908482</guid>  
-      <pubDate>Thu, 26 Nov 2015 00:07:26 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>VIDEO: Giant green 'pants' light up Tiverton</title>  
-      <description>Tiverton in Devon has unveiled its new Christmas lights - but many local residents have mocked them saying the lights look like underpants hanging on a washing line.</description>  
-      <link>http://www.bbc.co.uk/news/uk-34928851#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-34928851</guid>  
-      <pubDate>Thu, 26 Nov 2015 00:06:12 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/A79C/production/_86880924_pants1.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/10250/production/_86882166_pants1.jpg"/> 
-    </item>  
-    <item> 
-      <title>VIDEO: What is Black Friday?</title>  
-      <description>The BBC's Emma Simpson looks at the origin of the shopping phenomenon known as Black Friday and its impact on the UK economy.</description>  
-      <link>http://www.bbc.co.uk/news/business-34924016#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-34924016</guid>  
-      <pubDate>Thu, 26 Nov 2015 00:04:53 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/3CC5/production/_86875551_black2.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/63D5/production/_86875552_black2.jpg"/> 
-    </item>  
-    <item> 
-      <title>A difficult week in Brussels</title>  
-      <description>As Brussels gets back to normal, after a four-day lockdown, a sense of uncertainty and discontent lingers, says Chris Morris.</description>  
-      <link>http://www.bbc.co.uk/news/world-europe-34935527#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-34935527</guid>  
-      <pubDate>Thu, 26 Nov 2015 17:36:13 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Oldham is a fundamental test for Labour</title>  
-      <description>The Oldham West and Royton by-election will be the first major test of public opinion for new Labour leader Jeremy Corbyn, says Mark Mardell.</description>  
-      <link>http://www.bbc.co.uk/news/live/uk-politics-34919236#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/live/uk-politics-34919236</guid>  
-      <pubDate>Thu, 26 Nov 2015 02:04:34 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Tax changes in the pipeline</title>  
-      <description>Our tax affairs will be organised digitally in the future, Chancellor George Osborne says, but it does not mean it is getting any simpler. So what are the changes?</description>  
-      <link>http://www.bbc.co.uk/news/business-34927158#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-34927158</guid>  
-      <pubDate>Thu, 26 Nov 2015 00:00:04 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Shrinking to Zero: The Raspberry Pi gets smaller</title>  
-      <description>Launched in 2012, the Raspberry Pi has become Britain's most successful homegrown computer. Now it's getting smaller and cheaper.</description>  
-      <link>http://www.bbc.co.uk/news/live/technology-34922561#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/live/technology-34922561</guid>  
-      <pubDate>Thu, 26 Nov 2015 08:24:15 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Adele announces first tour since 2011</title>  
-      <description>Adele is to embark on a UK and European arena tour next year - her first tour for five years.</description>  
-      <link>http://www.bbc.co.uk/news/entertainment-arts-34934518#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-34934518</guid>  
-      <pubDate>Thu, 26 Nov 2015 14:04:44 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Top US academy bans pillow fights</title>  
-      <description>Huge pillow fights among US cadets to mark the end of summer training at the prestigious West Point military academy are to be banned.</description>  
-      <link>http://www.bbc.co.uk/news/world-us-canada-34931370#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-34931370</guid>  
-      <pubDate>Thu, 26 Nov 2015 10:08:56 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Toss to be scrapped in county cricket</title>  
-      <description>The mandatory coin toss is to be scrapped in both divisions of the County Championship next season.</description>  
-      <link>http://www.bbc.co.uk/sport/0/cricket/34937939</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/34937939</guid>  
-      <pubDate>Thu, 26 Nov 2015 18:58:40 GMT</pubDate>  
-      <media:thumbnail width="66" height="37" url="http://c.files.bbci.co.uk/63FF/production/_86899552_cook_clarke_toss_getty.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/8B0F/production/_86899553_cook_clarke_toss_getty.jpg"/> 
-    </item>  
-    <item> 
-      <title>North signs new Northampton deal</title>  
-      <description>Wales wing George North signs a new contract with Premiership club Northampton Saints.</description>  
-      <link>http://www.bbc.co.uk/sport/0/rugby-union/34938164</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/34938164</guid>  
-      <pubDate>Thu, 26 Nov 2015 16:52:39 GMT</pubDate>  
-      <media:thumbnail width="66" height="37" url="http://c.files.bbci.co.uk/B46D/production/_86898164_george_north-4.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/DB7D/production/_86898165_george_north-4.jpg"/> 
-    </item>  
-    <item> 
-      <title>'We shouldn't have to rely on strategy'</title>  
-      <description>Lewis Hamilton on preparing for the final race of the season, the strategy of Formula 1 and the attraction of Nascar.</description>  
-      <link>http://www.bbc.co.uk/sport/0/features/34913981</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/features/34913981</guid>  
-      <pubDate>Thu, 26 Nov 2015 11:05:50 GMT</pubDate>  
-      <media:thumbnail width="66" height="37" url="http://c.files.bbci.co.uk/7AA6/production/_86889313_lewishamilton.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/A1B6/production/_86889314_lewishamilton.jpg"/> 
-    </item>  
-    <item> 
-      <title>'Man Utd too rigid under Van Gaal'</title>  
-      <description>Manchester United are suffering from a "lack of freedom" under Louis van Gaal, says former club coach Rene Meulensteen.</description>  
-      <link>http://www.bbc.co.uk/sport/0/football/34936648</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/34936648</guid>  
-      <pubDate>Thu, 26 Nov 2015 16:44:35 GMT</pubDate>  
-      <media:thumbnail width="66" height="37" url="http://c.files.bbci.co.uk/11AB1/production/_86896327_louis_van_gaal_getty.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/141C1/production/_86896328_louis_van_gaal_getty.jpg"/> 
-    </item>  
-    <item> 
-      <title>Retailers brace for Black Friday frenzy</title>  
-      <description>UK retailers are gearing up for the Black Friday shopping phenomenon, with analysts predicting record online sales.</description>  
-      <link>http://www.bbc.co.uk/news/business-34931837#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-34931837</guid>  
-      <pubDate>Thu, 26 Nov 2015 17:03:13 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Barclays fined for poor client checks</title>  
-      <description>Banking giant Barclays has been fined £72m for failing to conduct proper checks on very rich clients because it did not want to inconvenience them.</description>  
-      <link>http://www.bbc.co.uk/news/business-34930492#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-34930492</guid>  
-      <pubDate>Thu, 26 Nov 2015 11:57:09 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/1253C/production/_86886057_breaking_image_large-3.png"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/14C4C/production/_86886058_breaking_image_large-3.png"/> 
-    </item>  
-    <item> 
-      <title>Salmond's portrait unveiling criticised</title>  
-      <description>Former first minister Alex Salmond is criticised for unveiling a new portrait in Edinburgh on the day MPs discussed possible military action in Syria.</description>  
-      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-politics-34934781#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-politics-34934781</guid>  
-      <pubDate>Thu, 26 Nov 2015 18:53:14 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>McDonnell defends Chairman Mao quote</title>  
-      <description>Labour's John McDonnell defends his decision to quote Chairman Mao in his Spending Review response, saying the stunt was a joke.</description>  
-      <link>http://www.bbc.co.uk/news/uk-politics-34931047#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-34931047</guid>  
-      <pubDate>Thu, 26 Nov 2015 09:39:57 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>One in five children obese in Year 6</title>  
-      <description>One in 10 children was obese at the start of primary school in England last year but one in five was obese by the end, according to new figures.</description>  
-      <link>http://www.bbc.co.uk/news/health-34932478#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-34932478</guid>  
-      <pubDate>Thu, 26 Nov 2015 14:41:55 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/AFC6/production/_86889944_002950296-2.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/D6D6/production/_86889945_002950296-2.jpg"/> 
-    </item>  
-    <item> 
-      <title>Junior doctor dispute to go to Acas</title>  
-      <description>The government has agreed to talks at Acas in the junior doctors' dispute - but the strikes have not been called off.</description>  
-      <link>http://www.bbc.co.uk/news/health-34915820#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-34915820</guid>  
-      <pubDate>Wed, 25 Nov 2015 16:38:06 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Plans to regulate madrassas published</title>  
-      <description>The government has set out draft plans to regulate madrassas.</description>  
-      <link>http://www.bbc.co.uk/news/education-34933970#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-34933970</guid>  
-      <pubDate>Thu, 26 Nov 2015 14:47:15 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Nurseries warn over 30-hours pledge</title>  
-      <description>Nurseries say they will struggle to meet the 30-hour free childcare pledge for pre-school children.</description>  
-      <link>http://www.bbc.co.uk/news/education-34934482#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-34934482</guid>  
-      <pubDate>Thu, 26 Nov 2015 15:21:22 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Pirate makes film to avoid being sued</title>  
-      <description>A convicted Czech software pirate agrees to make an anti-piracy film in order to avoid being sued by the firms whose software he pirated.</description>  
-      <link>http://www.bbc.co.uk/news/technology-34932628#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-34932628</guid>  
-      <pubDate>Thu, 26 Nov 2015 14:09:00 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/82F9/production/_86892533_jakub2.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/AA09/production/_86892534_jakub2.jpg"/> 
-    </item>  
-    <item> 
-      <title>The truth about Facebook quizzes</title>  
-      <description>Much press attention has been devoted to a Facebook quiz which asked for large swathes of data in return for a word cloud of your most used words, but do we really need to worry?</description>  
-      <link>http://www.bbc.co.uk/news/technology-34922029#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-34922029</guid>  
-      <pubDate>Thu, 26 Nov 2015 13:42:58 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/13F37/production/_86891718_wordcloud.gif"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/16647/production/_86891719_wordcloud.gif"/> 
-    </item>  
-    <item> 
-      <title>Ultrasound scans brain in micro 3D</title>  
-      <description>Scientists use ultrasound to scan the blood vessels of an entire rat brain in microscopic 3D detail, pioneering a technique they say will improve cancer and stroke diagnosis.</description>  
-      <link>http://www.bbc.co.uk/news/science-environment-34909663#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/science-environment-34909663</guid>  
-      <pubDate>Thu, 26 Nov 2015 16:37:15 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Lead poisons '100,000 birds annually'</title>  
-      <description>About 100,000 wetland birds are killed every year from poisoning by discarded lead ammunition, say scientists.</description>  
-      <link>http://www.bbc.co.uk/news/science-environment-34861602#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/science-environment-34861602</guid>  
-      <pubDate>Thu, 26 Nov 2015 06:11:14 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/EAC1/production/_86879006_86878997.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/12171/production/_86879047_86878997.jpg"/> 
-    </item>  
-    <item> 
-      <title>New Gremlins film 'not a remake'</title>  
-      <description>Actor Zach Galligan says the new Gremlins movie in development will not be a reboot or a remake and that he has a "decent chance" of reprising his role from the first two films.</description>  
-      <link>http://www.bbc.co.uk/news/entertainment-arts-34931057#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-34931057</guid>  
-      <pubDate>Thu, 26 Nov 2015 11:27:00 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>DJ's children sue for wrongful death</title>  
-      <description>Three of US DJ Casey Kasem's children and his brother sue the late star's widow for wrongful death in the latest move in a bitter family feud.</description>  
-      <link>http://www.bbc.co.uk/news/entertainment-arts-34930866#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-34930866</guid>  
-      <pubDate>Thu, 26 Nov 2015 09:40:18 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/6D36/production/_86885972_casem_reuters.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/9446/production/_86885973_casem_reuters.jpg"/> 
-    </item>  
-    <item> 
-      <title>Do terrorists really think they're going to win?</title>  
-      <description>The history of terrorism has much to teach about what drives the current wave of radicals.</description>  
-      <link>http://www.bbc.co.uk/news/magazine-34909636#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-34909636</guid>  
-      <pubDate>Wed, 25 Nov 2015 09:19:22 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>The trouble with saying you don't want children</title>  
-      <description>When Holly Brockwell spoke to the BBC about her decision not to have children, the abuse she received was so extreme she deactivated her Twitter account.</description>  
-      <link>http://www.bbc.co.uk/news/magazine-34916433#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-34916433</guid>  
-      <pubDate>Wed, 25 Nov 2015 01:37:55 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Julia Margaret Cameron at the V&amp;A</title>  
-      <description>The V&amp;A marks the bicentenary of Julia Margaret Cameron's birth</description>  
-      <link>http://www.bbc.co.uk/news/live/in-pictures-34913928#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/live/in-pictures-34913928</guid>  
-      <pubDate>Thu, 26 Nov 2015 04:34:16 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Monir Farmanfarmaian: A life in art</title>  
-      <description>The work of91-year-old artist Monir Farmanfarmaian</description>  
-      <link>http://www.bbc.co.uk/news/world-34921446#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-34921446</guid>  
-      <pubDate>Thu, 26 Nov 2015 08:26:44 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/9F3F/production/_86876704_moniryoung.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/C64F/production/_86876705_moniryoung.jpg"/> 
-    </item>  
-    <item> 
-      <title>What is the UK doing about Syria?</title>  
-      <description>11 key questions on what the UK should do about Syria</description>  
-      <link>http://www.bbc.co.uk/news/uk-34931421#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-34931421</guid>  
-      <pubDate>Thu, 26 Nov 2015 15:51:01 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>What is the Little Red Book?</title>  
-      <description>What exactly is the Little Red Book?</description>  
-      <link>http://www.bbc.co.uk/news/magazine-34932800#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-34932800</guid>  
-      <pubDate>Thu, 26 Nov 2015 13:48:14 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Does the UK have a problem with whiplash?</title>  
-      <description>Why does the UK have so many whiplash cases?</description>  
-      <link>http://www.bbc.co.uk/news/magazine-34925933#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-34925933</guid>  
-      <pubDate>Thu, 26 Nov 2015 10:18:05 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Why Greeks are exhuming their parents</title>  
-      <description>The country where people are exhumed after three years</description>  
-      <link>http://www.bbc.co.uk/news/magazine-34920068#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-34920068</guid>  
-      <pubDate>Thu, 26 Nov 2015 01:48:22 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Is this the subject with the most baffling jargon?</title>  
-      <description>Is this the subject with the most baffling jargon?</description>  
-      <link>http://www.bbc.co.uk/news/magazine-34858199#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-34858199</guid>  
-      <pubDate>Thu, 26 Nov 2015 01:38:24 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/11CA4/production/_86886827_angel_bbc.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/143B4/production/_86886828_angel_bbc.jpg"/> 
-    </item>  
-    <item> 
-      <title>Leaving the UK and going 'home' to Ghana</title>  
-      <description>Why young professionals are moving from London to Accra</description>  
-      <link>http://www.bbc.co.uk/news/world-africa-34924351#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-34924351</guid>  
-      <pubDate>Thu, 26 Nov 2015 06:17:13 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>'I went blind and feel partly to blame'</title>  
-      <description>'I went blind after neglecting my diabetes'</description>  
-      <link>http://www.bbc.co.uk/news/live/disability-34847776#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/live/disability-34847776</guid>  
-      <pubDate>Thu, 26 Nov 2015 01:46:55 GMT</pubDate> 
-    </item>  
-    <item> 
-      <title>Buster, bust-ups &amp; Boycott of tennis</title>  
-      <description>Great Britain's run to 1978 Davis Cup final was far from dull</description>  
-      <link>http://www.bbc.co.uk/sport/0/tennis/34761210</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/tennis/34761210</guid>  
-      <pubDate>Wed, 25 Nov 2015 18:22:19 GMT</pubDate>  
-      <media:thumbnail width="66" height="37" url="http://c.files.bbci.co.uk/110AE/production/_86860896_john_lloyd_buster_mottram_rex.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/137BE/production/_86860897_john_lloyd_buster_mottram_rex.jpg"/> 
-    </item> 
-  </channel> 
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>BBC News - Home</title>
+    <link>http://www.bbc.co.uk/news/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+    <description>The latest stories from the Home section of the BBC News web site.</description>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 15 Dec 2015 17:12:10 GMT</lastBuildDate>
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>
+    <image>
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>
+      <title>BBC News - Home</title>
+      <link>http://www.bbc.co.uk/news/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <width>120</width>
+      <height>60</height>
+    </image>
+    <ttl>15</ttl>
+    <atom:link href="http://feeds.bbci.co.uk/news/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>UK astronaut Tim Peake on way to ISS</title>
+      <description>The Soyuz space capsule carrying UK astronaut Tim Peake is in orbit around the Earth, closing in on the International Space Station.</description>
+      <link>http://www.bbc.co.uk/news/science-environment-35101643#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/science-environment-35101643</guid>
+      <pubDate>Tue, 15 Dec 2015 17:14:31 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/12496/production/_87220947_de54-1.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/14BA6/production/_87220948_de54-1.jpg"/>
+    </item>
+    <item>
+      <title>LA schools shut over threat to students</title>
+      <description>More than 1,000 schools in Los Angeles are closed and being searched after receiving an unspecified threat, say US police.</description>
+      <link>http://www.bbc.co.uk/news/world-us-canada-35102954#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-35102954</guid>
+      <pubDate>Tue, 15 Dec 2015 17:14:45 GMT</pubDate>
+    </item>
+    <item>
+      <title>Love rival jailed for cyclist murder</title>
+      <description>A motorist who murdered his love rival by ploughing his car into the man's bicycle at about 40mph is jailed for life.</description>
+      <link>http://www.bbc.co.uk/news/uk-england-nottinghamshire-35101463#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-nottinghamshire-35101463</guid>
+      <pubDate>Tue, 15 Dec 2015 16:37:08 GMT</pubDate>
+    </item>
+    <item>
+      <title>Paris attacks suspect held in France</title>
+      <description>French police have arrested a man as part of the investigation into the Paris terrorist attacks, sources say.</description>
+      <link>http://www.bbc.co.uk/news/world-europe-35102595#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-35102595</guid>
+      <pubDate>Tue, 15 Dec 2015 14:35:48 GMT</pubDate>
+    </item>
+    <item>
+      <title>Le Pen acquitted of inciting hatred</title>
+      <description>French National Front leader Marine le Pen is acquitted of charges of inciting hatred on the December 2010 campaign trail.</description>
+      <link>http://www.bbc.co.uk/news/world-europe-35104632#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-35104632</guid>
+      <pubDate>Tue, 15 Dec 2015 14:56:30 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/117BB/production/_87211617_breaking_image_large-3.png"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/13ECB/production/_87211618_breaking_image_large-3.png"/>
+    </item>
+    <item>
+      <title>Russian cruise missile 'hits flats'</title>
+      <description>Part of a Russian cruise missile hit a block of flats by accident in Russia's north-west Arctic but nobody was hurt, media report.</description>
+      <link>http://www.bbc.co.uk/news/world-europe-35106935#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-35106935</guid>
+      <pubDate>Tue, 15 Dec 2015 17:08:05 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/963E/production/_87226483_breaking_image_large-3.png"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/BD4E/production/_87226484_breaking_image_large-3.png"/>
+    </item>
+    <item>
+      <title>'No evidence' of Nazi gold train</title>
+      <description>There is no evidence that a Nazi train rumoured to be carrying gems and gold has been discovered underground in Poland, experts say.</description>
+      <link>http://www.bbc.co.uk/news/world-europe-35104117#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-35104117</guid>
+      <pubDate>Tue, 15 Dec 2015 14:37:04 GMT</pubDate>
+    </item>
+    <item>
+      <title>UK inflation rate turns positive</title>
+      <description>The UK's inflation rate turned positive in November for the first time in four months, official figures show.</description>
+      <link>http://www.bbc.co.uk/news/business-35100026#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35100026</guid>
+      <pubDate>Tue, 15 Dec 2015 14:16:59 GMT</pubDate>
+    </item>
+    <item>
+      <title>Hatton Garden accused 'lost nerve'</title>
+      <description>One of the men accused of the Hatton Garden burglary denies being mocked by other members of the gang after he allegedly lost his nerve and left without any of the £14m haul.</description>
+      <link>http://www.bbc.co.uk/news/uk-england-35103688#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-35103688</guid>
+      <pubDate>Tue, 15 Dec 2015 15:17:10 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/A08E/production/_87220114_86833728.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/C79E/production/_87220115_86833728.jpg"/>
+    </item>
+    <item>
+      <title>Nuclear body ends Iran investigation</title>
+      <description>The global nuclear watchdog, the IAEA, formally closes a probe into Iran's past activities - a key step towards lifting sanctions.</description>
+      <link>http://www.bbc.co.uk/news/world-middle-east-35104715#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-35104715</guid>
+      <pubDate>Tue, 15 Dec 2015 16:45:58 GMT</pubDate>
+    </item>
+    <item>
+      <title>First Syrian refugees arrive in NI</title>
+      <description>The first group of Syrian refugees arrive in Northern Ireland as part of the UK's Vulnerable Persons Relocations Scheme.</description>
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-35098540#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-35098540</guid>
+      <pubDate>Tue, 15 Dec 2015 15:39:14 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/B6F0/production/_87223864_img_1637.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/DE00/production/_87223865_img_1637.jpg"/>
+    </item>
+    <item>
+      <title>'Revenge porn' shooting man jailed</title>
+      <description>A man who shot his wife's lover, who had posted a "revenge porn" photograph of her on Facebook, has been jailed.</description>
+      <link>http://www.bbc.co.uk/news/uk-england-york-north-yorkshire-35100078#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-york-north-yorkshire-35100078</guid>
+      <pubDate>Tue, 15 Dec 2015 13:53:01 GMT</pubDate>
+    </item>
+    <item>
+      <title>VIDEO: Tim Peake: Docking at the ISS</title>
+      <description>Live coverage as UK astronaut Tim Peake's Soyuz rocket docks at the International Space Station.</description>
+      <link>http://www.bbc.co.uk/news/science-environment-35101155#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/science-environment-35101155</guid>
+      <pubDate>Tue, 15 Dec 2015 16:22:11 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/13935/production/_87218108_87218100.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/16045/production/_87218109_87218100.jpg"/>
+    </item>
+    <item>
+      <title>VIDEO: Tim Peake and Soyuz rocket blast off</title>
+      <description>Tim Peake has launched into space on a Russian Soyuz rocket to become Britain's first official astronaut on board the International Space Station.</description>
+      <link>http://www.bbc.co.uk/news/science-environment-35102646#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/science-environment-35102646</guid>
+      <pubDate>Tue, 15 Dec 2015 15:22:27 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/7B53/production/_87217513_87217387.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/A263/production/_87217514_87217387.jpg"/>
+    </item>
+    <item>
+      <title>VIDEO: 'The abuse started the day I met him'</title>
+      <description>Lindsay suffered both physical violence and extreme psychological and emotional abuse, known as coercive control, from her ex-partner.</description>
+      <link>http://www.bbc.co.uk/news/uk-35098396#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-35098396</guid>
+      <pubDate>Tue, 15 Dec 2015 00:34:03 GMT</pubDate>
+    </item>
+    <item>
+      <title>VIDEO: Revenge porn victim 'degraded and ashamed'</title>
+      <description>A woman whose ex-boyfriend was the first man to be sentenced under new "revenge porn" laws is calling for a change in the law to give all other victims the right to anonymity in such cases.</description>
+      <link>http://www.bbc.co.uk/news/uk-35103948#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-35103948</guid>
+      <pubDate>Tue, 15 Dec 2015 13:11:57 GMT</pubDate>
+    </item>
+    <item>
+      <title>VIDEO: Angry guest smashes truck into hotel</title>
+      <description>A disgruntled hotel guest crashed his vehicle into the lobby of a hotel in the US, after a dispute over a bill.</description>
+      <link>http://www.bbc.co.uk/news/world-us-canada-35100229#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-35100229</guid>
+      <pubDate>Tue, 15 Dec 2015 10:10:12 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/11B5D/production/_87214527_87213323.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/1426D/production/_87214528_87213323.jpg"/>
+    </item>
+    <item>
+      <title>VIDEO: Beddau murder couple 'abandoned kids'</title>
+      <description>Archive TV footage from New Zealand about a couple at the centre of a murder investigation in Wales who abandoned their children to start a new life in Australia.</description>
+      <link>http://www.bbc.co.uk/news/uk-wales-35104524#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-35104524</guid>
+      <pubDate>Tue, 15 Dec 2015 14:41:32 GMT</pubDate>
+    </item>
+    <item>
+      <title>VIDEO: Star Wars 'met all my expectations'</title>
+      <description>Star Wars fans lucky enough to have seen the new sequel have been giving their verdict on the latest film.</description>
+      <link>http://www.bbc.co.uk/news/entertainment-arts-35100224#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-35100224</guid>
+      <pubDate>Tue, 15 Dec 2015 09:17:51 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/139CB/production/_87213308_87213249.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/160DB/production/_87213309_87213249.jpg"/>
+    </item>
+    <item>
+      <title>VIDEO: Who's doing what in anti-IS coalition?</title>
+      <description>The BBC's James Robbins looks at who is doing what in the US-led coalition fighting so-called Islamic State militants in Iraq and Syria.</description>
+      <link>http://www.bbc.co.uk/news/world-middle-east-35102555#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-35102555</guid>
+      <pubDate>Tue, 15 Dec 2015 13:16:34 GMT</pubDate>
+    </item>
+    <item>
+      <title>US Muslims reel at Trump supporters' hostility</title>
+      <description>Donald Trump's incendiary rhetoric has left US Muslims feeling isolated and victimised, says James Cook.</description>
+      <link>http://www.bbc.co.uk/news/world-us-canada-35100094#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-35100094</guid>
+      <pubDate>Tue, 15 Dec 2015 12:17:47 GMT</pubDate>
+    </item>
+    <item>
+      <title>Merkel's demise greatly exaggerated</title>
+      <description>Angela Merkel's uncompromising stance over refugees has not been popular within her own party but she is standing firm, says Jenny Hill.</description>
+      <link>http://www.bbc.co.uk/news/world-europe-35096556#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-35096556</guid>
+      <pubDate>Tue, 15 Dec 2015 02:06:56 GMT</pubDate>
+    </item>
+    <item>
+      <title>The computer virus that blackmails you</title>
+      <description>Ransomware is becoming the fastest growing form of computer malware, experts warn.</description>
+      <link>http://www.bbc.co.uk/news/technology-35091714#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-35091714</guid>
+      <pubDate>Mon, 14 Dec 2015 13:33:28 GMT</pubDate>
+    </item>
+    <item>
+      <title>Why do many Americans mistrust the Federal Reserve?</title>
+      <description>Many Americans do not trust their central bank, US Federal Reserve, but their scepticism isn’t new - it dates back to the early years of the republic.</description>
+      <link>http://www.bbc.co.uk/news/business-35079495#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35079495</guid>
+      <pubDate>Tue, 15 Dec 2015 00:31:49 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/B64E/production/_87207664_gettyimages-171044921.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/DD5E/production/_87207665_gettyimages-171044921.jpg"/>
+    </item>
+    <item>
+      <title>Mao letter to Attlee fetches £605,000</title>
+      <description>A 1937 letter from Chinese Communist Party leader Mao Zedong to then-UK Labour Party leader Clement Attlee sells at auction for more than £600,000.</description>
+      <link>http://www.bbc.co.uk/news/uk-35103383#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-35103383</guid>
+      <pubDate>Tue, 15 Dec 2015 14:39:11 GMT</pubDate>
+    </item>
+    <item>
+      <title>Bearded triathlete sails length of UK</title>
+      <description>An extreme adventurer becomes the first person to run, swim, cycle and sail from Land's End to John O'Groats.</description>
+      <link>http://www.bbc.co.uk/news/uk-england-35099548#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-35099548</guid>
+      <pubDate>Tue, 15 Dec 2015 10:36:53 GMT</pubDate>
+    </item>
+    <item>
+      <title>Blatter facing 'the Inquisition'</title>
+      <description>Banned Fifa president Sepp Blatter reiterates his innocence to all 209 national football associations over ethics charges.</description>
+      <link>http://www.bbc.co.uk/sport/0/football/35102749</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/35102749</guid>
+      <pubDate>Tue, 15 Dec 2015 16:06:47 GMT</pubDate>
+      <media:thumbnail width="66" height="37" url="http://c.files.bbci.co.uk/10560/production/_87221966_blatter_reuters.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/12C70/production/_87221967_blatter_reuters.jpg"/>
+    </item>
+    <item>
+      <title>Barca stars fail to make Uefa XI</title>
+      <description>Lionel Messi, Neymar and Luis Suarez fail to make Uefa's Champions League group stage XI.</description>
+      <link>http://www.bbc.co.uk/sport/0/football/35104275</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/35104275</guid>
+      <pubDate>Tue, 15 Dec 2015 15:16:09 GMT</pubDate>
+      <media:thumbnail width="66" height="37" url="http://c.files.bbci.co.uk/162D0/production/_87223809_messi_neymar.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/0728/production/_87223810_messi_neymar.jpg"/>
+    </item>
+    <item>
+      <title>Bristol block Borthwick England move</title>
+      <description>Bristol say they have not reached a deal with the Rugby Football Union over the appointment of Steve Borthwick as England forwards coach.</description>
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/35104747</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/35104747</guid>
+      <pubDate>Tue, 15 Dec 2015 16:51:16 GMT</pubDate>
+      <media:thumbnail width="66" height="37" url="http://c.files.bbci.co.uk/1432C/production/_87223728_borthwick_getty.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/16A3C/production/_87223729_borthwick_getty.jpg"/>
+    </item>
+    <item>
+      <title>Ferrari 'could quit' F1 over rules</title>
+      <description>Ferrari's president says an exit from F1 is "possible" as engine change proposals and power struggles grip the sport.</description>
+      <link>http://www.bbc.co.uk/sport/0/formula1/35103892</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/formula1/35103892</guid>
+      <pubDate>Tue, 15 Dec 2015 14:39:37 GMT</pubDate>
+      <media:thumbnail width="66" height="37" url="http://c.files.bbci.co.uk/15BBE/production/_87222098_marchionne_arrivabene_getty.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/182CE/production/_87222099_marchionne_arrivabene_getty.jpg"/>
+    </item>
+    <item>
+      <title>UK house prices 'rising strongly'</title>
+      <description>UK house prices continued to grow strongly in October, the Office for National Statistics says.</description>
+      <link>http://www.bbc.co.uk/news/business-35101209#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35101209</guid>
+      <pubDate>Tue, 15 Dec 2015 12:03:05 GMT</pubDate>
+    </item>
+    <item>
+      <title>Starbucks pays £8m tax as profits jump</title>
+      <description>Starbucks UK has paid more than £8m in tax in the past 12 months on the back of record profits, the coffee chain says.</description>
+      <link>http://www.bbc.co.uk/news/business-35102462#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35102462</guid>
+      <pubDate>Tue, 15 Dec 2015 12:40:56 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/BF41/production/_87216984_starbucks.logo.g.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/E651/production/_87216985_starbucks.logo.g.jpg"/>
+    </item>
+    <item>
+      <title>'No taboos' when EU debates UK demands</title>
+      <description>EU leaders have to hold a "serious debate with no taboos" on David Cameron's reform demands, European Council president Donald Tusk says.</description>
+      <link>http://www.bbc.co.uk/news/uk-politics-eu-referendum-35106142#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-eu-referendum-35106142</guid>
+      <pubDate>Tue, 15 Dec 2015 16:47:55 GMT</pubDate>
+    </item>
+    <item>
+      <title>Thatcher's red box sells for £242,500</title>
+      <description>A red prime ministerial dispatch box belonging to the late Margaret Thatcher sells for £242,500 at an auction of her belongings in London.</description>
+      <link>http://www.bbc.co.uk/news/uk-35100338#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-35100338</guid>
+      <pubDate>Tue, 15 Dec 2015 17:17:19 GMT</pubDate>
+    </item>
+    <item>
+      <title>Mum 'can't wait for chemo' after birth</title>
+      <description>A mother who gave birth to her daughter 12 weeks early in order to be treated for cancer says she "can't wait to start chemo".</description>
+      <link>http://www.bbc.co.uk/news/uk-england-bristol-35098753#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-bristol-35098753</guid>
+      <pubDate>Tue, 15 Dec 2015 08:06:15 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/A619/production/_87212524_allyandheidi.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/CD29/production/_87212525_allyandheidi.jpg"/>
+    </item>
+    <item>
+      <title>Medics sentenced for boy's death</title>
+      <description>A doctor and nurse who "seriously neglected" a six-year-old boy who died in hospital are given suspended sentences for his manslaughter.</description>
+      <link>http://www.bbc.co.uk/news/uk-england-leicestershire-35092309#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-leicestershire-35092309</guid>
+      <pubDate>Mon, 14 Dec 2015 17:02:45 GMT</pubDate>
+    </item>
+    <item>
+      <title>OECD in judgement on Scots curriculum</title>
+      <description>An OECD report says Scottish schools remain above international averages - but the gap is narrowing.</description>
+      <link>http://www.bbc.co.uk/news/uk-scotland-35101835#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-35101835</guid>
+      <pubDate>Tue, 15 Dec 2015 14:59:51 GMT</pubDate>
+    </item>
+    <item>
+      <title>Fight to save school for deaf pupils</title>
+      <description>Campaigners are fighting to save a specialist school for deaf children, which closed suddenly last week.</description>
+      <link>http://www.bbc.co.uk/news/education-35101604#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-35101604</guid>
+      <pubDate>Tue, 15 Dec 2015 13:28:39 GMT</pubDate>
+    </item>
+    <item>
+      <title>Man held in UK in VTech hacking probe</title>
+      <description>A 21-year-old man is arrested in Berkshire, UK, as part of an investigation into the hacking of electronic toy maker VTech.</description>
+      <link>http://www.bbc.co.uk/news/technology-35100735#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-35100735</guid>
+      <pubDate>Tue, 15 Dec 2015 09:58:03 GMT</pubDate>
+    </item>
+    <item>
+      <title>Ashley Madison members blackmailed</title>
+      <description>Some victims of the Ashley Madison hack are now receiving blackmail letters, demanding cash under threat of exposure.</description>
+      <link>http://www.bbc.co.uk/news/technology-35101662#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-35101662</guid>
+      <pubDate>Tue, 15 Dec 2015 11:35:43 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/262B/production/_87217790_ashleymadisonreuters.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/4D3B/production/_87217791_ashleymadisonreuters.jpg"/>
+    </item>
+    <item>
+      <title>Mission tracks global pollutant trends</title>
+      <description>The success of clean air legislation in western developed countries is evident in a 10-year satellite study that tracks big declines of the pollutant nitrogen dioxide.</description>
+      <link>http://www.bbc.co.uk/news/science-environment-35099519#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/science-environment-35099519</guid>
+      <pubDate>Tue, 15 Dec 2015 07:54:07 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/828D/production/_87212433_global_abs_2014.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/A99D/production/_87212434_global_abs_2014.jpg"/>
+    </item>
+    <item>
+      <title>UK butterflies in '40-year slump'</title>
+      <description>More than three-quarters of the UK's butterflies have declined in the past 40 years, according to scientists.</description>
+      <link>http://www.bbc.co.uk/news/science-environment-35093468#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/science-environment-35093468</guid>
+      <pubDate>Tue, 15 Dec 2015 01:04:52 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/25A8/production/_87204690_87204684.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/4CB8/production/_87204691_87204684.jpg"/>
+    </item>
+    <item>
+      <title>Star Wars sequel has world premiere</title>
+      <description>The hotly-anticipated latest instalment in the Star Wars franchise, The Force Awakens, gets its world premiere in Los Angeles.</description>
+      <link>http://www.bbc.co.uk/news/entertainment-arts-35087192#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-35087192</guid>
+      <pubDate>Tue, 15 Dec 2015 08:34:03 GMT</pubDate>
+    </item>
+    <item>
+      <title>Du Beke and Derham deny Strictly 'fix'</title>
+      <description>Strictly Come Dancing's Anton Du Beke and Katie Derham hit back at suggestions they were "helped" into the final by the judges.</description>
+      <link>http://www.bbc.co.uk/news/entertainment-arts-35099897#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-35099897</guid>
+      <pubDate>Tue, 15 Dec 2015 12:35:23 GMT</pubDate>
+    </item>
+    <item>
+      <title>The employees shut inside coffins</title>
+      <description>Companies in South Korea are getting their staff to take part in their own pretend funerals to make them appreciate life.</description>
+      <link>http://www.bbc.co.uk/news/magazine-34797017#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-34797017</guid>
+      <pubDate>Mon, 14 Dec 2015 00:52:50 GMT</pubDate>
+    </item>
+    <item>
+      <title>Girl power among the 'boy toys'</title>
+      <description>Female action heroes are reaching new heights in Hollywood blockbusters like Star Wars: The Force Awakens, but there is one place where their power has hit a wall.</description>
+      <link>http://www.bbc.co.uk/news/magazine-34968467#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-34968467</guid>
+      <pubDate>Mon, 14 Dec 2015 02:10:43 GMT</pubDate>
+    </item>
+    <item>
+      <title>Your pictures: Signs</title>
+      <description>Readers' photographs on the theme of signs.</description>
+      <link>http://www.bbc.co.uk/news/in-pictures-35049526#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/in-pictures-35049526</guid>
+      <pubDate>Wed, 09 Dec 2015 15:40:52 GMT</pubDate>
+    </item>
+    <item>
+      <title>Week in pictures</title>
+      <description>A selection of the best news photographs from around the world taken over the past week.</description>
+      <link>http://www.bbc.co.uk/news/in-pictures-35070105#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/in-pictures-35070105</guid>
+      <pubDate>Sat, 12 Dec 2015 00:55:21 GMT</pubDate>
+    </item>
+    <item>
+      <title>Flying close to China's new islands</title>
+      <description>China's navy warns the BBC to fly away from its new islands</description>
+      <link>http://www.bbc.co.uk/news/magazine-35031313#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-35031313</guid>
+      <pubDate>Mon, 14 Dec 2015 22:00:37 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/7347/production/_87211592_gavenreef.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/9A57/production/_87211593_gavenreef.jpg"/>
+    </item>
+    <item>
+      <title>'I was in Star Wars'</title>
+      <description>The bit part actors who are now more popular than ever</description>
+      <link>http://www.bbc.co.uk/news/entertainment-arts-35094162#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-35094162</guid>
+      <pubDate>Tue, 15 Dec 2015 00:14:52 GMT</pubDate>
+    </item>
+    <item>
+      <title>The strange psychology of pain relief medicine</title>
+      <description>Why do people buy expensive painkillers?</description>
+      <link>http://www.bbc.co.uk/news/magazine-35091242#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-35091242</guid>
+      <pubDate>Tue, 15 Dec 2015 11:09:26 GMT</pubDate>
+    </item>
+    <item>
+      <title>Serena Williams is Sportsperson of the Year. Not everyone agrees</title>
+      <description>Serena Williams is Sportsperson of the Year - but some disagree</description>
+      <link>http://www.bbc.co.uk/news/blogs-trending-35077124#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/blogs-trending-35077124</guid>
+      <pubDate>Tue, 15 Dec 2015 00:28:17 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/BCA2/production/_87209284_gettyimages-500415454.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/E3B2/production/_87209285_gettyimages-500415454.jpg"/>
+    </item>
+    <item>
+      <title>Is Christmas shopping by smartphone just two taps away?</title>
+      <description>How online shopping by smartphone is becoming easier</description>
+      <link>http://www.bbc.co.uk/news/business-35074682#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-35074682</guid>
+      <pubDate>Tue, 15 Dec 2015 00:29:10 GMT</pubDate>
+      <media:thumbnail width="66" height="49" url="http://c.files.bbci.co.uk/5897/production/_87197622_thinkstockphotos-496635338.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/7FA7/production/_87197623_thinkstockphotos-496635338.jpg"/>
+    </item>
+    <item>
+      <title>'I do my crying in the shower'</title>
+      <description>Caring for a loved one with dementia can be isolating</description>
+      <link>http://www.bbc.co.uk/news/health-35090765#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-35090765</guid>
+      <pubDate>Tue, 15 Dec 2015 03:11:28 GMT</pubDate>
+    </item>
+    <item>
+      <title>Delhi gang rape: Second chance for teenage rapist?</title>
+      <description>Freedom looms for Delhi's teenage rapist - what now?</description>
+      <link>http://www.bbc.co.uk/news/world-asia-india-35069562#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-india-35069562</guid>
+      <pubDate>Tue, 15 Dec 2015 00:05:06 GMT</pubDate>
+    </item>
+    <item>
+      <title>Premier League's tales of unexpected</title>
+      <description>'Premier League's hallmark has been unpredictability this year'</description>
+      <link>http://www.bbc.co.uk/sport/0/football/35098742</link>
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/35098742</guid>
+      <pubDate>Tue, 15 Dec 2015 01:21:56 GMT</pubDate>
+      <media:thumbnail width="66" height="37" url="http://c.files.bbci.co.uk/DFF3/production/_87213375_leicester_getty_images.jpg"/>
+      <media:thumbnail width="144" height="81" url="http://c.files.bbci.co.uk/10703/production/_87213376_leicester_getty_images.jpg"/>
+    </item>
+  </channel>
 </rss>
-
