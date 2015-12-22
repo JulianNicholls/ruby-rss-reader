@@ -8,10 +8,21 @@
       </div>
       <div class="col-sm-10">
         <h1><%= linkify(@title) %></h1>
-        <h5><%= linkify(@info[:description]) %></h5>
+        <% if @info[:description] %>
+          <h5><%= linkify(@info[:description]) %></h5>
+        <% end %>
         <% if @info[:copyright] %>
           <h6><%= linkify(@info[:copyright]) %></h6>
         <% end %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 col-sm-offset-9">
+        <select name="feeds" id="feeds" class="pull-right">
+        <% feeds.each do |feed| %>
+          <option value="<%= feed[:url] %>" <%= 'selected' if feed[:url] == @address %>><%= feed[:name] %></option>
+        <% end %>
+        </select>
       </div>
     </div>
   </div>
