@@ -8,4 +8,8 @@ $(function() {
             });
         });
     }, 90000);
+
+    $("select#feeds").on('change', function () {
+        window.location = '/feed/' + this.value;
+    });
 });
