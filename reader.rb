@@ -13,7 +13,12 @@ class ItemTraverser
 
   def collect
     item = @parts_list.each_with_object({}) do |(key, path), object|
-      @section = @base.xpath(path.first)
+      # Prefixed items can be a problem if they are not present
+      begin
+        @section = @base.xpath(path.first)
+      rescue => err
+        next
+      end
 
       next if @section.empty?
       next object[key] = @section.children.to_s if path.size == 1
@@ -93,13 +98,13 @@ if $PROGRAM_NAME == __FILE__
   require 'pp'
 
   begin
-    addr = ARGV[0] || 'bbc_rss_feed.xml'
+    addr = ARGV[0] || 'apple_dev.xml'
     feed = Feed.new(addr)
 
     pp feed.info
     pp feed.items.size
     pp feed.items.take(5)
-  rescue StandardError => e
-    warn "Cannot open #{addr}: #{e}"
+  rescue StandardError => err
+    warn "Cannot open #{addr}: #{err}"
   end
 end
