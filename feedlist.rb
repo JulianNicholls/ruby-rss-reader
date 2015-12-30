@@ -21,3 +21,11 @@ class FeedList
     end
   end
 end
+
+if $PROGRAM_NAME == __FILE__
+  list = FeedList.new
+
+  list.sort_by { |item| item[:name] }.each do |feed|
+    printf "%-35s  %s\n", feed[:name], feed[:url]
+  end
+end
