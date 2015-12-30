@@ -1,7 +1,6 @@
 require 'mongo'
 
 # List of RSS Feeds loaded from the sites collection of the feeds DB under Mongo
-
 class FeedList
   include Mongo
   include Enumerable
