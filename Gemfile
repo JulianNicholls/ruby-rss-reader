@@ -8,4 +8,5 @@ gem 'mongo'
 
 group :development do
   gem 'sinatra-reloader'
+  gem 'awesome_print'
 end
