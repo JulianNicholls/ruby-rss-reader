@@ -95,15 +95,15 @@ class Feed
 end
 
 if $PROGRAM_NAME == __FILE__
-  require 'pp'
+  require 'awesome_print'
 
   begin
-    addr = ARGV[0] || 'apple_dev.xml'
+    addr = ARGV[0] || 'os_news.xml'
     feed = Feed.new(addr)
 
-    pp feed.info
-    pp feed.items.size
-    pp feed.items.take(5)
+    ap feed.info
+    ap feed.items.size
+    ap feed.items.take(5)
   rescue StandardError => err
     warn "Cannot open #{addr}: #{err}"
   end
