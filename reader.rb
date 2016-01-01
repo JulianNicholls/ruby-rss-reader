@@ -16,7 +16,7 @@ class ItemTraverser
       # Prefixed items can be a problem if they are not present
       begin
         @section = @base.xpath(path.first)
-      rescue => err
+      rescue
         next
       end
 
@@ -78,13 +78,23 @@ class Feed
     @info ||= load_info
   end
 
+  def items
+    @items ||= load_items
+  end
+
+  def time_sorted_items
+    items.sort_by { |item| Time.parse(item[:timestamp]) }.reverse
+  end
+
+  def title
+    info[:title]
+  end
+
+  private
+
   def load_info
     info = @rss.xpath(TOP_LEVEL)
     ItemTraverser.new(info, INFO_PARTS).collect
-  end
-
-  def items
-    @items ||= load_items
   end
 
   def load_items
