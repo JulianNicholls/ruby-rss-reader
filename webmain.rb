@@ -21,6 +21,10 @@ class RssApp < Sinatra::Application
     self.class.feeds
   end
 
+  def new_feed
+    @feed = Feed.new @address || 'bbc_rss_feed.xml'
+  end
+
   get('/css/style.css') { scss :style }
 
   get('/') do
@@ -33,10 +37,10 @@ class RssApp < Sinatra::Application
     @address = params[:splat][0].sub(%r{(https?):/}, '\1://')
 
     begin
-      feed = Feed.new @address || 'bbc_rss_feed.xml'
-      @title = feed.info[:title]
+      new_feed
+      @title = feed.title
       @info  = feed.info
-      @items = feed.items.sort_by { |item| Time.parse(item[:timestamp]) }.reverse
+      @items = feed.time_sorted_items
     rescue StandardError => err
       @title = "Cannot load feed at #{@address}"
       @info  = { description:  err }
@@ -49,4 +53,8 @@ class RssApp < Sinatra::Application
   get('/humantime') do
     HumanTime.new(params[:stamp]).to_s
   end
+
+  private
+
+  attr_reader :feed
 end
