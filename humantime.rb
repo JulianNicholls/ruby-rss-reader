@@ -40,7 +40,7 @@ class HumanTime
 
   def last_hour
     return 'Just now' if elapsed < 90
-    return 'A couple of minutes ago' if elapsed < 170
+    return 'A few minutes ago' if elapsed < 210
     return 'An hour ago' if elapsed.between?(58 * 60 + 30, 65 * 60 - 15)
     return 'Half an hour ago' if elapsed.between?(28.5 * 60, 31.5 * 60)
 
