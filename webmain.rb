@@ -22,7 +22,7 @@ class RssApp < Sinatra::Application
   end
 
   def new_feed
-    @feed = Feed.new @address || 'bbc_rss_feed.xml'
+    @feed = Feed.new(@address || 'bbc_rss_feed.xml')
   end
 
   get('/css/style.css') { scss :style }

@@ -11,8 +11,10 @@ describe HumanTime do
     this_time = Time.now
     just_now = this_time - 5
     shortly_ago = this_time - 125
+    still_a_few = this_time - 200
     HumanTime.new(just_now).to_s.must_equal 'Just now'
-    HumanTime.new(shortly_ago).to_s.must_equal 'A couple of minutes ago'
+    HumanTime.new(shortly_ago).to_s.must_equal 'A few minutes ago'
+    HumanTime.new(still_a_few).to_s.must_equal 'A few minutes ago'
   end
 
   # From here on, it works with an injected 'now' to make elapsed time
@@ -21,7 +23,10 @@ describe HumanTime do
     HumanTime.new('2014-01-07 13:59', now).to_s.must_equal 'Just now'
 
     HumanTime.new('2014-01-07 13:58', now)
-      .to_s.must_equal 'A couple of minutes ago'
+      .to_s.must_equal 'A few minutes ago'
+
+    HumanTime.new('2014-01-07 13:57', now)
+      .to_s.must_equal 'A few minutes ago'
 
     HumanTime.new('2014-01-07 13:30', now).to_s.must_equal 'Half an hour ago'
 
