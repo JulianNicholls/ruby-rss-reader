@@ -46,8 +46,8 @@ end
 
 # Load and store a RSS / Atom feed.
 class Feed
-  TOP_LEVEL = '//channel'
-  ITEMS     = '//item'
+  TOP_LEVEL = '//channel'.freeze
+  ITEMS     = '//item'.freeze
 
   INFO_PARTS = {
     title:         ['title'],
@@ -59,7 +59,7 @@ class Feed
     image_width:   ['image/width'],
     image_height:  ['image/height'],
     timestamp:     ['lastBuildDate']
-  }
+  }.freeze
 
   ITEM_PARTS = {
     title:       ['title'],
@@ -67,11 +67,11 @@ class Feed
     link:        ['link'],
     timestamp:   ['pubDate'],
     image:       ['media:thumbnail', ['url']]
-  }
+  }.freeze
 
   def initialize(feed_path)
     # This could be a file or web address. It could raise an exception.
-    @rss = Nokogiri::XML(open feed_path)
+    @rss = Nokogiri::XML open(feed_path)
   end
 
   def info
