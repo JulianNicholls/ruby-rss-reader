@@ -59,7 +59,7 @@ class HumanTime
     return format('%.0f weeks', ((days + 3) / 7)) if days <= 49
     return format('%.0f months', (days / 30.0)) if days < (20 * 30)
 
-    format '%.0f years', ((days / 365) + 0.5)
+    format '%.0f years', ((days / 365.0) + 0.5)
   end
 
   def elapsed
