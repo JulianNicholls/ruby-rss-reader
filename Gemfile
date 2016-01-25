@@ -5,6 +5,7 @@ gem 'sinatra'
 gem 'sass'
 gem 'nokogiri'
 gem 'mongo'
+gem 'thin'
 
 group :development do
   gem 'sinatra-reloader'
