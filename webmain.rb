@@ -25,6 +25,10 @@ class RssApp < Sinatra::Application
     @feed = Feed.new(@address || 'bbc_rss_feed.xml')
   end
 
+  def page_title
+    @title
+  end
+
   get('/css/style.css') { scss :style }
 
   get('/') do
