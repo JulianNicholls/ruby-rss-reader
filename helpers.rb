@@ -1,12 +1,10 @@
 # Helper functions for the RSS viewer
 module RssAppHelpers
+  # It's a utility function so it has :reek:FeatureEnvy
   def linkify(text)
-    if text && text.is_a?(String)
-      text.gsub(%r{(https?://\S+)}, '<a href="\1" target="_blank">\1</a>')
-    else
-      warn "NAS: #{text.inspect}"
-      ''
-    end
+    return '' unless text && text.is_a?(String)
+
+    text.gsub(%r{(https?://\S+)}, '<a href="\1" target="_blank">\1</a>')
   rescue => err
     warn "rescue: #{err.inspect}"
     ''
