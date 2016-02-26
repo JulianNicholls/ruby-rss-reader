@@ -1,19 +1,8 @@
 require 'time'
 
-# Refine Float to have a between? analog.
-module FloatPatch
-  refine Float do
-    def in?(low, high)
-      self >= low && self <= high
-    end
-  end
-end
-
 # Class that returns a Human representation of the time elapsed since
 # a passed time, or between two times.
 class HumanTime
-  using FloatPatch
-
   HOUR_SECS = 3600
   DAY_SECS  = 24 * HOUR_SECS
 
@@ -30,6 +19,8 @@ class HumanTime
     longer + ' ago'
   end
 
+  private
+
   def today
     return last_hour if elapsed < (71 * 60)
 
@@ -41,22 +32,27 @@ class HumanTime
   def last_hour
     return 'Just now' if elapsed < 90
     return 'A few minutes ago' if elapsed < 210
-    return 'An hour ago' if elapsed.between?(58 * 60 + 30, 65 * 60 - 15)
     return 'Half an hour ago' if elapsed.between?(28.5 * 60, 31.5 * 60)
+    return 'An hour ago' if elapsed.between?(58 * 60 + 30, 65 * 60 - 15)
 
-    format('%.0f minutes ago', (elapsed / 60.0) + 0.45) if elapsed < (71 * 60)
+    format('%.0f minutes ago', (elapsed / 60.0) + 0.45)
   end
 
   def longer
-    return 'A week' if days.in?(6, 8)
-    return 'A fortnight' if days.in?(13, 15)
+    return 'A week' if days.between?(6.0, 8.0)
+    return 'A fortnight' if days.between?(13.0, 15.0)
 
-    days_weeks_months
+    days_weeks
   end
 
-  def days_weeks_months
+  def days_weeks
     return format('%.0f days', [days, 2].max) if days <= 28
     return format('%.0f weeks', ((days + 3) / 7)) if days <= 49
+
+    months_years
+  end
+
+  def months_years
     return format('%.0f months', (days / 30.0)) if days < (20 * 30)
 
     format '%.0f years', ((days / 365.0) + 0.5)

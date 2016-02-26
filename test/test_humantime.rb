@@ -19,7 +19,7 @@ describe HumanTime do
 
   # From here on, it works with an injected 'now' to make elapsed time
   # much easier to set.
-  it 'should be right for the last hour' do
+  it 'should be right for the last few minutes' do
     HumanTime.new('2014-01-07 13:59', now).to_s.must_equal 'Just now'
 
     HumanTime.new('2014-01-07 13:58', now)
@@ -27,7 +27,9 @@ describe HumanTime do
 
     HumanTime.new('2014-01-07 13:57', now)
              .to_s.must_equal 'A few minutes ago'
+  end
 
+  it 'should be right for the last hour' do
     HumanTime.new('2014-01-07 13:30', now).to_s.must_equal 'Half an hour ago'
 
     HumanTime.new('2014-01-07 13:00', now).to_s.must_equal 'An hour ago'
@@ -82,10 +84,13 @@ describe HumanTime do
     HumanTime.new('2013-12-09 06:00', now).to_s.must_equal '5 weeks ago'
   end
 
-  it 'should be right for months before' do
+  it 'should be right for the months in the last year' do
     HumanTime.new('2013-11-01 06:00', now).to_s.must_equal '2 months ago'
     HumanTime.new('2013-07-01 06:00', now).to_s.must_equal '6 months ago'
     HumanTime.new('2013-01-01 06:00', now).to_s.must_equal '12 months ago'
+  end
+
+  it 'should be right for the previous year' do
     HumanTime.new('2012-07-01 06:00', now).to_s.must_equal '18 months ago'
     HumanTime.new('2012-06-01 06:00', now).to_s.must_equal '19 months ago'
   end
