@@ -23,6 +23,7 @@ class RssApp < Sinatra::Application
 
   def new_feed
     @feed = Feed.new(@address || 'bbc_rss_feed.xml')
+    @feed_ok = true
   end
 
   def page_title
@@ -46,6 +47,7 @@ class RssApp < Sinatra::Application
       @info  = feed.info
       @items = feed.time_sorted_items
     rescue StandardError => err
+      @feed_ok = false
       @title = "Cannot load feed at #{@address}"
       @info  = { description:  err }
       @items = []
