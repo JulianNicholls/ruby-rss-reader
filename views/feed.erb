@@ -28,30 +28,31 @@
   </div>
 </header>
 
-<div class="container">
-  <% if @items.any? %>
-    <% @items.each do |item| %>
-      <article>
-        <div class="row">
-          <div class="col-sm-2 image-col">
-            <% if item.key? :image_url %>
+<% if @feed_ok %>
+  <div class="container">
+    <% if @items.any? %>
+      <% @items.each do |item| %>
+        <article>
+          <div class="row">
+            <div class="col-sm-2 image-col">
+              <% if item.key? :image_url %>
+                <a href="<%= item[:link] %>" target="_blank">
+                  <img src="<%= item[:image_url] %>" alt="">
+                </a>
+              <% end %>
+            </div>
+            <div class="col-sm-8">
               <a href="<%= item[:link] %>" target="_blank">
-                <img src="<%= item[:image_url] %>" alt="">
+                <h4><%= item[:title] %></h4>
               </a>
-            <% end %>
+              <p><%= linkify(item[:description]) %></p>
+            </div>
+            <div data-stamp="<%= item[:timestamp] %>" class="col-sm-2 humantime"><%= item[:time_ago] %></div>
           </div>
-          <div class="col-sm-8">
-            <a href="<%= item[:link] %>" target="_blank">
-              <h4><%= item[:title] %></h4>
-            </a>
-            <p><%= linkify(item[:description]) %></p>
-          </div>
-          <div data-stamp="<%= item[:timestamp] %>" class="col-sm-2 humantime"><%= item[:time_ago] %></div>
-        </div>
-      </article>
+        </article>
+      <% end %>
+    <% else %>
+      <h3 class="text-center">No feed items to display</h3>
     <% end %>
-  <% else %>
-    <h3 class="text-center">No feed items to display</h3>
-  <% end %>
-</div>
-
+  </div>
+<% end %>
