@@ -10,5 +10,15 @@ module RssAppHelpers
     ''
   end
 
+  # It's a utility function so it has :reek:FeatureEnvy
+  def process_cdata(string)
+    pos = string =~ /<!\[CDATA\[/
+
+    warn 'CDATA found after string beginning' if pos && pos > 0
+
+    string.gsub(/<!\[CDATA\[([^\]]+)\]\]>/, '\1')
+  end
+
   module_function :linkify
+  module_function :process_cdata
 end

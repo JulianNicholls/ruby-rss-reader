@@ -3,9 +3,12 @@
 require 'open-uri'
 require 'nokogiri'
 require './humantime'
+require './helpers'
 
 # Take a section of an XML file and traverse it in search of key, value pairs
 class ItemTraverser
+  include RssAppHelpers
+
   def initialize(base, parts)
     @base = base
     @parts_list = parts
@@ -21,12 +24,12 @@ class ItemTraverser
       end
 
       next if @section.empty?
-      next object[key] = @section.children.to_s if path.size == 1
+      next object[key] = process_cdata(@section.children.to_s) if path.size == 1
 
       @section.each do |cur|
         path[1].each do |element|
           key_name = "#{key}_#{element}".to_sym
-          object[key_name] = cur[element]
+          object[key_name] = process_cdata(cur[element])
         end
       end
     end
@@ -108,7 +111,7 @@ if $PROGRAM_NAME == __FILE__
   require 'awesome_print'
 
   begin
-    addr = ARGV[0] || 'os_news.xml'
+    addr = ARGV[0] || 'bbc_rss_feed.xml'
     feed = Feed.new(addr)
 
     ap feed.info
