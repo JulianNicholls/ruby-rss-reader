@@ -4,6 +4,9 @@ module RssAppHelpers
   def linkify(text)
     return '' unless text && text.is_a?(String)
 
+    # return the text unchanged if links are already embedded
+    return text if text =~ /<a/
+
     text.gsub(%r{(https?://\S+)}, '<a href="\1" target="_blank">\1</a>')
   rescue => err
     warn "rescue: #{err.inspect}"

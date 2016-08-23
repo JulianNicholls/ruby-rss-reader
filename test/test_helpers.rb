@@ -6,7 +6,7 @@ require_relative '../helpers.rb'
 
 describe RssAppHelpers do
   describe 'linkify' do
-    it 'should reject bad stuff, but not throw' do
+    it 'should reject bad stuff, returning "" but not throw' do
       RssAppHelpers.linkify(nil).must_equal ''
       RssAppHelpers.linkify(3).must_equal ''
     end
@@ -16,20 +16,25 @@ describe RssAppHelpers do
       RssAppHelpers.linkify('no link').must_equal 'no link'
     end
 
+    it 'should do nothing if the links are already taken care of' do
+      text = 'A <a href="#">Link</a> here'
+      RssAppHelpers.linkify(text).must_equal text
+    end
+
     it 'should translate http links' do
       desired = '<a href="http://link.com" target="_blank">http://link.com</a>'
       RssAppHelpers.linkify('http://link.com').must_equal desired
 
-      desired = '<a href="http://link.com/ndex.html" target="_blank">http://link.com/ndex.html</a>'
-      RssAppHelpers.linkify('http://link.com/ndex.html').must_equal desired
+      desired = '<a href="http://a.com/b.htm" target="_blank">http://a.com/b.htm</a>'
+      RssAppHelpers.linkify('http://a.com/b.htm').must_equal desired
     end
 
     it 'should translate https links' do
-      desired = '<a href="https://link.com" target="_blank">https://link.com</a>'
-      RssAppHelpers.linkify('https://link.com').must_equal desired
+      desired = '<a href="https://a.com" target="_blank">https://a.com</a>'
+      RssAppHelpers.linkify('https://a.com').must_equal desired
 
-      desired = '<a href="https://link.com/ndex.html" target="_blank">https://link.com/ndex.html</a>'
-      RssAppHelpers.linkify('https://link.com/ndex.html').must_equal desired
+      desired = '<a href="https://a.com/b.htm" target="_blank">https://a.com/b.htm</a>'
+      RssAppHelpers.linkify('https://a.com/b.htm').must_equal desired
     end
   end
 
@@ -45,6 +50,13 @@ describe RssAppHelpers do
       RssAppHelpers.process_cdata(test_str).must_equal(desired)
     end
 
+    it 'should strip out embedded CDATA headers at the beginning of a string' do
+      test_str = '<![CDATA[embedded CDATA]]> text'
+      desired  = 'embedded CDATA text'
+      RssAppHelpers.process_cdata(test_str).must_equal(desired)
+    end
+
+    # A warning is output  for this one
     it 'should strip out embedded CDATA headers from a string' do
       test_str = 'text <![CDATA[embedded CDATA]]> text'
       desired  = 'text embedded CDATA text'
