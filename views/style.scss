@@ -1,7 +1,7 @@
-$base-colour: #6c6a5a;
-$base-one:    #e55041;
-$base-two:    #6ea1ff;
-$base-three:  #ddd9d0;
+$base-colour: #607D8B;
+$base-one:    #455A64;
+$base-two:    #90CAF9;
+$base-three:  #78909C;
 $base-four:   #831d16;
 
 $footer-border:  #e5e5e5;
@@ -11,14 +11,16 @@ $footer-text:    #777;
 $highlight:      #ffff88;
 $date-highlight: #000080;
 
-$header-bg:      $base-three;
-$header-link:    $base-one;
+$body-bg:        $base-three;
+
+$header-bg:      $base-one;
+$header-link:    $base-two;
 
 $article-bg:     $base-colour;
 $article-link:   $base-two;
 
 body {
-    background: linear-gradient($base-four, black);
+    background: $body-bg;
     min-height: 1200px;
 }
 
@@ -36,7 +38,7 @@ nav img {
 
 header {
     background: $header-bg;
-    color: black;
+    color: white;
     margin-top: -19px;
     margin-bottom: 20px;
     padding: 10px;
@@ -49,7 +51,7 @@ header {
         color: $header-link;
 
         &:hover {
-            color: lighten($header-link, 20);
+            color: lighten($header-link, 10);
         }
     }
 }
@@ -69,13 +71,13 @@ article {
         color: $article-link;
 
         &:hover {
-            color: lighten($article-link, 20);
+            color: lighten($article-link, 10);
         }
     }
 
     .humantime {
         text-align: right;
-        font-size: 80%;
+        font-size: 85%;
     }
 }
 
