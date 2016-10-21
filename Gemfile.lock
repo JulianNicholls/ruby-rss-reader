@@ -10,10 +10,8 @@ GEM
     mongo (2.3.0)
       bson (~> 4.1)
     multi_json (1.12.1)
-    nokogiri (1.6.8)
+    nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-      pkg-config (~> 1.1.7)
-    pkg-config (1.1.7)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
@@ -52,7 +50,7 @@ DEPENDENCIES
   thin
 
 RUBY VERSION
-   ruby 2.2.4p230
+   ruby 2.3.1p112
 
 BUNDLED WITH
-   1.12.5
+   1.13.5

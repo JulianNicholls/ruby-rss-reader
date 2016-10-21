@@ -37,3 +37,4 @@ build/
 mongo.log
 *.xml
 .*.swp
+certs
