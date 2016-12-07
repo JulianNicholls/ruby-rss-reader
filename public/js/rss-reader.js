@@ -12,4 +12,8 @@ $(function() {
     $("select#feeds").on('change', function () {
         window.location = '/feed/' + this.value;
     });
+
+    $("#reload").on('click', function () {
+      window.location.reload(true);
+    });
 });
