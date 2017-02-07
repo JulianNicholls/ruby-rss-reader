@@ -57,7 +57,10 @@ class RssApp < Sinatra::Application
   end
 
   get('/humantime') do
-    HumanTime.new(params[:stamp]).to_s
+    "{
+      \"first\": #{params[:first]},
+      \"ago\": \"#{HumanTime.new(params[:stamp]).to_s}\"
+    }"
   end
 
   private
