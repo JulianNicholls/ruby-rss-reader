@@ -38,6 +38,7 @@ class RssApp < Sinatra::Application
   end
 
   get('/feed/*') do
+    expires 7200, :public, :must_revalidate
     @title = 'Feed'
     @address = params[:splat][0].sub(%r{(https?):/}, '\1://')
 
