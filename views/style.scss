@@ -1,23 +1,23 @@
-$base-colour:     #607D8B;
-$base-one:        #455A64;
-$base-two:        #90CAF9;
-$base-three:      #78909C;
-$base-four:       #831d16;
+$base-colour: #326076;
+$colour-2: #054b6b;
+$colour-3: #9eddfa;
+$colour-4: #709ac2;
+$colour-5: #831d16;
 
-$footer-border:   #e5e5e5;
-$footer-bg:       #f0f0f0;
-$footer-text:     #777;
+$footer-border: #e5e5e5;
+$footer-bg: #f0f0f0;
+$footer-text: #777;
 
-$highlight:       #ffff88;
-$date-highlight:  #000080;
+$highlight: #ffff88;
+$date-highlight: #000080;
 
-$body-bg:         $base-three;
+$body-bg: $colour-4;
 
-$header-bg:       $base-one;
-$header-link:     $base-two;
+$header-bg: $colour-2;
+$header-link: $colour-3;
 
-$article-bg:      $base-colour;
-$article-link:    $base-two;
+$article-bg: $base-colour;
+$article-link: $colour-3;
 
 body {
   background: $body-bg;
@@ -43,7 +43,8 @@ header {
   margin-bottom: 20px;
   padding: 10px;
 
-  h5, h6 {
+  h5,
+  h6 {
     text-align: center;
   }
 
@@ -72,7 +73,8 @@ article {
     margin-left: 0;
   }
 
-  a, a:visited {
+  a,
+  a:visited {
     color: $article-link;
 
     &:hover {
@@ -103,13 +105,12 @@ footer {
   }
 
   small {
-    font-size: 80%
+    font-size: 80%;
   }
 }
 
-
 @media (max-width: 992px) {
-    li.active {
-        display: none;
-    }
+  li.active {
+    display: none;
+  }
 }
