@@ -1,36 +1,33 @@
 <header>
   <div class="container">
     <div class="row">
-      <div class="col-sm-1">
+      <div class="col-sm-3">
         <% if @info[:image_url] %>
-          <img src="<%= @info[:image_url] %>" alt="<%= @info[:image_caption] %>" />
+          <a href="<%= @info[:link] %>" title="<%= @info[:image_caption] %>">
+            <img src="<%= @info[:image_url] %>" alt="<%= @info[:image_caption] %>" />
+          </a>
         <% end %>
       </div>
-      <div class="col-sm-10">
+      <div class="col-sm-6">
         <h1><%= linkify(page_title) %></h1>
         <% if @info[:description] %>
-          <h5><%= linkify(@info[:description]) %></h5>
+          <h2><%= linkify(@info[:description]) %></h2>
         <% end %>
         <% if @info[:copyright] %>
           <h6><%= linkify(@info[:copyright]) %></h6>
         <% end %>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3 col-sm-offset-8">
-        <select name="feeds" id="feeds" class="pull-right">
+      <div class="col-sm-3">
+        <select name="feeds" id="feeds" class="pull-left">
         <% feeds.sort_by {|feed| feed[:name]}.each do |feed| %>
           <option value="<%= feed[:url] %>"<%= ' selected' if feed[:url] == @address %>><%= feed[:name] %></option>
         <% end %>
         </select>
-      </div>
-      <div class="col-sm-1">
-        <button id="reload" class="btn btn-sm btn-primary">
+        <button id="reload" class="btn btn-sm btn-primary pull-right">
           <i class="fa fa-undo" aria-hidden="true"></i>
         </button>
       </div>
     </div>
-  </div>
 </header>
 
 <% if @feed_ok %>
@@ -39,7 +36,7 @@
       <% @items.each do |item| %>
       <article>
         <div class="row">
-          <div class="col-sm-2 image-col">
+          <div class="col-sm-2">
             <% if item.key? :image_url %>
               <a href="<%= item[:link] %>" target="_blank">
                 <img src="<%= item[:image_url] %>" width="150" alt="">
