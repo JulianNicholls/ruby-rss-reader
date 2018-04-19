@@ -3,16 +3,17 @@ require 'mongo'
 
 # Explore the chosen MongoDB installation.
 class MongoExplorer
+  include Mongo
   # Turn off the irritating DEBUG level logging and incidentally redirect it
   # to a file rather than the console.
-  Mongo::Logger.logger       = ::Logger.new('mongo.log')
-  Mongo::Logger.logger.level = ::Logger::INFO
+  Logger.logger       = ::Logger.new('mongo.log')
+  Logger.logger.level = ::Logger::INFO
 
   attr_reader :collections, :dbname
 
   # Connect to the local installation by default
-  def initialize(conn = 'mongodb://localhost')
-    @client = Mongo::Client.new conn
+  def initialize(conn = 'mongodb://mongodb.local/')
+    @client = Client.new conn
   end
 
   def list_databases_with_sizes
