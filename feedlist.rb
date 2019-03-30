@@ -1,4 +1,5 @@
 require 'mongo'
+require 'resolv'
 
 # List of RSS Feeds loaded from the sites collection of the feeds DB under Mongo
 class FeedList
@@ -11,7 +12,9 @@ class FeedList
   Logger.logger.level = ::Logger::INFO
 
   def initialize
-    client = Client.new('mongodb://mongodb.local/feeds')
+    host = Resolv.getaddress 'mongodb.local'
+    print "host: ", host
+    client = Client.new("mongodb://127.0.0.1:27017/feeds")
     @sites = client['sites']
   end
 
