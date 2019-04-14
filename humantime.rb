@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'time'
 
 # Class that returns a Human representation of the time elapsed since
@@ -13,7 +15,7 @@ class HumanTime
   end
 
   def to_s
-    return today if days < 0
+    return today if days.negative?
     return 'Yesterday' if days < 1
 
     longer + ' ago'

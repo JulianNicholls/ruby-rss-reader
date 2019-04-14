@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'mongo'
 require 'resolv'
 
@@ -13,8 +15,7 @@ class FeedList
 
   def initialize
     host = Resolv.getaddress 'mongodb.local'
-    print "host: ", host
-    client = Client.new("mongodb://127.0.0.1:27017/feeds")
+    client = Client.new("mongodb://#{host}:27017/feeds")
     @sites = client['sites']
   end
 

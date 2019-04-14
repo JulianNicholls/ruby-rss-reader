@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'sinatra'
 require 'sinatra/reloader' if development?
 require 'sass'
@@ -47,10 +49,10 @@ class RssApp < Sinatra::Application
       @title = feed.title
       @info  = feed.info
       @items = feed.time_sorted_items
-    rescue StandardError => err
+    rescue StandardError => e
       @feed_ok = false
       @title = "Cannot load feed at #{@address}"
-      @info  = { description:  err }
+      @info  = { description: e }
       @items = []
     end
 
@@ -60,7 +62,7 @@ class RssApp < Sinatra::Application
   get('/humantime') do
     "{
       \"first\": #{params[:first]},
-      \"ago\": \"#{HumanTime.new(params[:stamp]).to_s}\"
+      \"ago\": \"#{HumanTime.new(params[:stamp])}\"
     }"
   end
 

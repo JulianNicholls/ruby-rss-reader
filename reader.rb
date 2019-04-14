@@ -1,9 +1,16 @@
-#!/usr/bin/env ruby -I.
+# frozen_string_literal: true
 
 require 'open-uri'
 require 'nokogiri'
 require './humantime'
 require './helpers'
+
+def add_human_time(item)
+  stamp = item[:timestamp]
+  item[:time_ago] = HumanTime.new(stamp) if stamp
+
+  item
+end
 
 # Take a section of an XML file and traverse it in search of key, value pairs
 class ItemTraverser
@@ -36,40 +43,31 @@ class ItemTraverser
 
     add_human_time(item)
   end
-
-  private
-
-  def add_human_time(item)
-    stamp = item[:timestamp]
-    item[:time_ago] = HumanTime.new(stamp) if stamp
-
-    item
-  end
 end
 
 # Load and store a RSS / Atom feed.
 class Feed
-  TOP_LEVEL = '//channel'.freeze
-  ITEMS     = '//item'.freeze
+  TOP_LEVEL = '//channel'
+  ITEMS     = '//item'
 
   INFO_PARTS = {
-    title:         ['title'],
-    link:          ['link'],
-    description:   ['description'],
-    copyright:     ['copyright'],
-    image_url:     ['image/url'],
+    title: ['title'],
+    link: ['link'],
+    description: ['description'],
+    copyright: ['copyright'],
+    image_url: ['image/url'],
     image_caption: ['image/title'],
-    image_width:   ['image/width'],
-    image_height:  ['image/height'],
-    timestamp:     ['lastBuildDate']
+    image_width: ['image/width'],
+    image_height: ['image/height'],
+    timestamp: ['lastBuildDate']
   }.freeze
 
   ITEM_PARTS = {
-    title:       ['title'],
+    title: ['title'],
     description: ['description'],
-    link:        ['link'],
-    timestamp:   ['pubDate'],
-    image:       ['media:thumbnail', ['url']]
+    link: ['link'],
+    timestamp: ['pubDate'],
+    image: ['media:thumbnail', ['url']]
   }.freeze
 
   def initialize(feed_path)
@@ -117,7 +115,7 @@ if $PROGRAM_NAME == __FILE__
     ap feed.info
     ap feed.items.size
     ap feed.items.take(5)
-  rescue StandardError => err
-    warn "Cannot open #{addr}: #{err}"
+  rescue StandardError => e
+    warn "Cannot open #{addr}: #{e}"
   end
 end

@@ -1,13 +1,15 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 ruby '2.6.0'
 
-gem 'sinatra'
-gem 'sass'
-gem 'nokogiri'
 gem 'mongo'
+gem 'nokogiri', '>= 1.8.5'
+gem 'sass'
+gem 'sinatra', '>= 2.0.2'
 gem 'thin'
 
 group :development do
-  gem 'sinatra-reloader'
   gem 'awesome_print'
+  gem 'sinatra-reloader'
 end
