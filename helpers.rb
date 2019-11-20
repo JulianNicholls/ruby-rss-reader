@@ -4,7 +4,7 @@
 module RssAppHelpers
   # It's a utility function so it has :reek:FeatureEnvy
   def linkify(text)
-    return '' unless text?.is_a?(String)
+    return '' unless !text.nil? && text.is_a?(String)
 
     # return the text unchanged if links are already embedded
     return text if text =~ /<a/
@@ -19,7 +19,7 @@ module RssAppHelpers
   def process_cdata(string)
     pos = string =~ /<!\[CDATA\[/
 
-    warn 'CDATA found after string beginning' if pos?.positive?
+    warn 'CDATA found after string beginning' if !pos.nil? && pos.positive?
 
     string.gsub(/<!\[CDATA\[([^\]]+)\]\]>/, '\1')
   end
