@@ -12,7 +12,7 @@ GEM
       bson (>= 4.4.2, < 5.0.0)
     multi_json (1.13.1)
     mustermann (1.0.3)
-    nokogiri (1.10.2)
+    nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     rack (2.0.7)
     rack-protection (2.0.5)
@@ -51,7 +51,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   mongo
-  nokogiri (>= 1.8.5)
+  nokogiri (>= 1.10.4)
   sass
   sinatra (>= 2.0.2)
   sinatra-reloader
